@@ -1,0 +1,47 @@
+
+.infoBox {
+  border: 0.5px solid #364547;
+  padding: 20px;
+  vertical-align: center;
+  font-weight: 100;
+}
+
+.infoContainer {
+  display: flex;
+  flex-basis: auto;
+}
+h1 {
+  color: #364547;
+  margin-bottom: 0.5em;
+}
+.exchangeContainer .box {
+  width: 50%;
+  display: flex;
+  flex-basis: 50%;
+}
+.box div {
+  width: 100%;
+}
+select,
+.infoBox {
+  width: 95%;
+  height: 40px;
+  font-size: 1em;
+  cursor: pointer;
+  outline: none;
+  background: #7868e6;
+  color: white;
+  margin: 0.2em 0;
+  padding: 0 1em;
+  border-radius: 10px;
+  border: none;
+}
+
+
+#exchangeSelect {
+  margin-right: 10px;
+}
+#description {
+ overflow:scroll !important; 
+ 
+}

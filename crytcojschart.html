@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+  <title>Hello, world!</title>
+</head>
+
+<style>
+  .input-group-prepend{
+      display:flex;
+      flex-basis: auto;
+  }
+
+  
+.card {
+  border: 0.5px solid #364547;
+  padding: 20px;
+  vertical-align: center;
+  font-weight: 100;
+}
+
+.title {
+  font-size: 2em;
+      margin: 0.2em 0;
+      border-radius: 10px;
+      border: solid #364547 1px;
+      font-weight: bold;
+      outline: none;
+      padding: 0 1em;
+      margin-bottom: 2rem;
+}
+
+</style>
+
+
+<body>
+  <h1 class='text-center'>Cryptco Chart</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-4 col-xl-4">
+        <div id="priceBox" class="infoContainer">
+          <h3 class="title">Crypto Pricing Chart</h3>
+          <div class="chart_div_price"></div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-xl-4">
+        <div id="capBox" class="infoContainer">
+          <h3 class="title">Crypto Market Cap Chart</h3>
+          <div class="chart_div_cap"></div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-xl-4">
+        <div id="volumeBox" class="infoContainer">
+          <h3 class="title">Crypto Trading Volume Chart</h3>
+          <div class="chart_div_volume"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- selection part -->
+    <form class='mt-6'>
+      <div class="row">
+
+        <div class='form-group row col-12 col-md-4 col-xl-4'>
+          <label for="coin_options" class='fw-bold'>Select A Coin</label>
+          <select id='coin_options' class="form-select form-select-lg mb-3">
+            Please select a coin
+          </select>
+        </div>
+
+        <div class='form-group row col-12 col-md-4 col-xl-4'>
+          <label for="currency" class='fw-bold'>Select A Currency</label>
+          <select class=" form-select form-select-lg mb-3" aria-label=".form-select-lg example" id='currency'>
+            <option selected>Please select a currency</option>
+            <option value="1">cny</option>
+            <option value="2">usd</option>
+            <option value="3">jpy</option>
+          </select>
+        </div>
+
+
+        <div class='form-group row col-12 col-md-4 col-xl-4'>
+          <label for="Frequency" class='fw-bold'>Select A Frequency</label>
+          <select class="form-select form-select-lg mb-3" aria-label=".form-select-sm example" id='frequency'>
+            <option selected>Please select a frequency</option>
+            <option value="1">daily</option>
+            <option value="2">weekly</option>
+            <option value="3">hourly</option>
+          </select>
+        </div>
+      </div>
+    </form>
+
+
+    <!-- price data table-->
+    <div class="container-fluid">
+
+
+      <div class="input-group input-group-sm  ">
+        <div class="input-group-prepend ">
+          <span class="input-group-text font-bold" id="inputGroup-sizing-sm">name</span>
+          <div class="card font-light align-self-center" id="name"></div>
+        </div>
+      </div>
+
+      <div class="input-group input-group-md ">
+        <div class="input-group-prepend ">
+          <span class="input-group-text font-bold" id="inputGroup-sizing-sm">Spot Price</span>
+          <div class="card font-light align-self-center " id="spotPrice"></div>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text font-bold">Day High</span>
+          <div class="card font-light align-self-center" id="dayHigh"></div>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text font-bold" id="inputGroup-sizing-sm">Day Low</span>
+          <div class="card font-light" id="dayLow"></div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+      const coinSelector = document.getElementById("coin_options");
+      const chartDivPrice = document.querySelector(".chart_div_price");
+      const chartDivCap = document.querySelector(".chart_div_cap");
+      const chartDivVolume = document.querySelector(".chart_div_volume");
+      const currencySelector = document.getElementById('currency')
+      const frequencySelector = document.getElementById('frequency')
+      const spotPrice = document.getElementById('spotPrice')
+      const dayHigh = document.getElementById('dayHigh')
+      const dayLow = document.getElementById('dayLow')
+
+      let currentCoin;
+
+      // setup JSchart
+      function displayChart(data) {
+        // set graph location for price line
+        const canvas_price = document.createElement("canvas");
+        canvas_price.setAttribute("id", "myChart");
+        chartDivPrice.appendChild(canvas_price);
+
+        // set graph location for market cap line
+        const canvas_cap = document.createElement("canvas");
+        canvas_cap.setAttribute("id", "myChart_cap");
+        chartDivCap.appendChild(canvas_cap);
+
+        // set graph location for market cap line
+        const canvas_volume = document.createElement("canvas");
+        canvas_volume.setAttribute("id", "myChart_volume");
+        chartDivVolume.appendChild(canvas_volume);
+
+        // graph for price line
+        let ctx = document.getElementById("myChart").getContext("2d");
+        ctx.canvas.width = 100;
+        ctx.canvas.height = 100;
+        let myChart = new Chart(ctx, {
+          type: "line",
+          data: {
+            labels: data[0][1].map((day) => day[0]),
+            datasets: [
+              {
+                label: "Price (USD)",
+                data: data[0][1].map((day) => day[1]),
+                backgroundColor: "#BEFEFF",
+                borderColor: "#00BEC1",
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {
+            animations: {
+              tension: {
+                duration: 1000,
+                easing: "linear",
+                from: 1,
+                to: 0,
+                loop: true,
+              },
+            },
+          },
+        });
+        // graph for Cap line
+        let ctx_2 = document.getElementById("myChart_cap").getContext("2d");
+        let myChart_cap = new Chart(ctx_2, {
+          type: "line",
+          data: {
+            labels: data[1][1].map((day) => day[0]),
+            datasets: [
+              {
+                label: "Market Cap (USD)",
+                data: data[1][1].map((day) => day[1]),
+                backgroundColor: "#BEFEFF",
+                borderColor: "#00BEC1",
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {},
+        });
+        // graph for volume line
+        let ctx_3 = document.getElementById("myChart_volume").getContext("2d");
+        let myChart_volume = new Chart(ctx_3, {
+          type: "bar",
+          data: {
+            labels: data[2][1].map((day) => day[0]),
+            datasets: [
+              {
+                label: "Trading Volume (USD)",
+                data: data[2][1].map((day) => day[1]),
+                backgroundColor: "#BEFEFF",
+                borderColor: "#00BEC1",
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {},
+        });
+      }
+
+      // API data loading and convert all UNIX data to time
+      function getCoinData(coin) {
+        const endpoint = `https://api.coingecko.com/api/v3/coins/${coin}/market_chart?vs_currency=jpy&days=1800&interval=weekly`;
+        fetch(endpoint)
+          .then((response) => response.json())
+          .then((data) => {
+            let entryCoin = Object.entries(data);
+
+            for (let i = 0; i < entryCoin[0][1].length; i++) {
+              entryCoin[0][1][i][0] = unitToTime(entryCoin[0][1][i][0]).slice(0, 11);
+              entryCoin[1][1][i][0] = unitToTime(entryCoin[1][1][i][0]).slice(0, 11);
+              entryCoin[2][1][i][0] = unitToTime(entryCoin[2][1][i][0]).slice(0, 11);
+            }
+            // reset the graph
+            chartDivPrice.innerHTML = " ";
+            chartDivCap.innerHTML = " ";
+            chartDivVolume.innerHTML = " ";
+
+            displayChart(entryCoin);
+            console.log(entryCoin);
+          })
+      };
+      // for the day high, day low and spot price table
+      function getPriceData(coin) {
+        fetch(`https://api.coingecko.com/api/v3/coins/${coin}`)
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            // get_price(entryPrice)
+            // let entryPrice = Object.entries(data);
+            spotPrice.innerHTML = ` <p> $${data.market_data.current_price.usd}</p>`
+            dayHigh.innerHTML = `  <p> $${data.market_data.high_24h.usd}</p>`
+            dayLow.innerHTML = ` <p> $${data.market_data.low_24h.usd}</p>`
+            document.getElementById("name").innerHTML = `
+                   <img src=${data.image.small} />
+                   <span>${data.name}</span>`
+
+
+
+          }
+          )
+      }
+
+      // Get the coin_name
+      function getCoinNames() {
+        const endpoint =
+          "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd";
+        fetch(endpoint)
+          .then((response) => response.json())
+          .then((coinData) => {
+            coinData.forEach((name) => {
+              const coinName = name.name;
+              const option = document.createElement("option");
+              option.setAttribute("value", coinName);
+              option.innerHTML = coinName;
+              coinSelector.appendChild(option);
+            });
+            currentCoin = coinSelector.children[0].value;
+            getCoinData(currentCoin);
+            getPriceData(currentCoin)
+
+            console.log(coinData);
+          })
+          .catch((err) => console.warn(err));
+      }
+      getCoinNames();
+
+      // trigger event 
+
+      coinSelector.addEventListener("change", () => {
+        const currentIndex = coinSelector.selectedIndex;
+        const coinSelected =
+          coinSelector.children[currentIndex].value.toLowerCase();
+        currentCoin = coinSelected;
+        getCoinData(coinSelected);
+        getPriceData(coinSelected)
+      });
+
+      currencySelector.addEventListener("change", () => {
+        const currentIndex = currencySelector.selectedIndex;
+        const currencySelected =
+          currencySelector.children[currentIndex].value.toLowerCase();
+
+        getCoinData(currencySelected);
+      });
+
+
+      frequencySelector.addEventListener("change", () => {
+        const currentIndex = frequencySelector.selectedIndex;
+        const frequencySelected =
+          frequencySelector.children[currentIndex].value.toLowerCase();
+
+        getCoinData(frequencySelected);
+
+      });
+
+      // function to convert unix time to normal date
+      function unitToTime(time) {
+        const milliseconds = time;
+        const dataObject = new Date(milliseconds);
+        const humanDateFormat = dataObject.toLocaleString();
+        return humanDateFormat;
+      }
+
+
+
+    </script>
+</body>
+
+</html>

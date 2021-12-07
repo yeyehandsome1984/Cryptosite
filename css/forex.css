@@ -1,0 +1,73 @@
+#currencyPart {
+   
+    display: flex;
+
+  }
+
+
+  .box div {
+    width: 100%;
+  }
+  .currencyHeader {
+    text-align: center;
+  }
+  select {
+   
+    height: 40px;
+    font-size: 1em;
+    cursor: pointer;
+    outline: none;
+    background: #7868e6;
+    color: white;
+    margin: 0.2em 0;
+    padding: 0 1em;
+    border-radius: 10px;
+    font-weight: 1000;
+    border: none;
+  }
+  input {
+    width: 95%;
+    height: 40px;
+    font-size: 1em;
+    margin: 0.2em 0;
+    border-radius: 10px;
+    border: none;
+    background: #edeef7;
+    outline: none;
+    padding: 0 1em;
+  }
+  #btn_currency_convert {
+    
+    cursor: pointer;
+
+  }
+  #time {
+    font-size: 1rem;
+    display:flex;
+    align-items: center;
+  }
+
+  .btc_box {
+    margin-top: 1rem;
+  }
+
+   
+  
+  #btcEquivalent{
+    background: #edeef7;
+    border-radius: 10px;
+    font-size: 1rem;
+    height:40px;
+    padding: 1em
+    
+  }
+  #btcAns{
+    width: 72%;
+    margin-left:0.2em
+
+  }
+  
+  ::-webkit-input-placeholder { 
+color: rgba(0, 0, 0, 0.6);
+font-size: 0.5em !important;
+}
