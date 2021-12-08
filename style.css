@@ -9,7 +9,7 @@
 @import url(css/font-awesome.min.css);
 @import url(css/custom-icon.css);
 @import url(css/classy-nav.min.css);
-@import url(css/exchange.css);
+@import url(css/platform.css);
 /* :: 3.0 Base CSS */
 * {
   margin: 0;
@@ -109,6 +109,10 @@ img {
   margin-right: 50px !important; }
 
 /* Height */
+
+.height-200 {
+  height: 200px !important; }
+
 .height-400 {
   height: 400px !important; }
 

@@ -15,11 +15,11 @@ h1 {
   margin-bottom: 0.5em;
 }
 .exchangeContainer .box {
-  width: 50%;
+
   display: flex;
   flex-basis: 50%;
 }
-.box div {
+.box div { 
   width: 100%;
 }
 select,

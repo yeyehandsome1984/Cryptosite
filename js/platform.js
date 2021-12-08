@@ -152,6 +152,7 @@ function retrieveData(data) {
   let get_openContract = [];
   let get_image = "";
   let get_description='';
+  let volume_formatted;
 
   for (let i = 0; i < entry.length; i++) {
     if (entry[i][1].name === devExchangeSelected) {
@@ -164,14 +165,18 @@ function retrieveData(data) {
       get_image = entry[i][1].image;
       get_openContract = entry[i][1].open_interest_btc;
       get_description = entry[i][1].description;
+      
+      //format the number to a more readable way
+      volume_formatted= new Intl.NumberFormat().format(get_volume)
+  
     }
   }
-
+//new Intl.NumberFormat().format(number)
   devCountry.innerHTML = `${get_country}`;
   devYear.innerHTML = `${get_year}`;
   futurePairNumber.innerHTML = `${get_futurePairNumber}`;
   perpetualPairNumber.innerHTML = `${get_perpetualPairNumber}`;
-  devVolume.innerHTML = `${get_volume}`;
+  devVolume.innerHTML = `${volume_formatted}`;
   openContractNumber.innerHTML = `${get_openContract}`;
   devUrl.innerHTML = `<a href=${get_url}>${get_url}</a> `;
   devImage.src = get_image;
