@@ -491,6 +491,7 @@ textarea:focus {
             @media #{$breakpoint-xs} {
                 height: 80px;
             }
+         
             .classynav ul li a {
                 font-size: 16px;
                 font-weight: 500;
@@ -504,6 +505,9 @@ textarea:focus {
         .classynav ul li .dropdown li a,
         .classynav ul li .megamenu li a {
             font-size: 14px;
+        }
+        #sonFace {
+            border-radius: 50%;
         }
         .classynav {
             .header-newsletter-form {
@@ -563,28 +567,7 @@ textarea:focus {
     }
 }
 
-.megamenu-slides {
-    .owl-prev,
-    .owl-next {
-        @include bg-gradients;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        color: $white-color;
-        top: 50%;
-        margin-top: -15px;
-        left: 5%;
-        position: absolute;
-        z-index: 10;
-        text-align: center;
-        font-size: 18px;
-        @include trans-duration(500ms);
-    }
-    .owl-next {
-        left: auto;
-        right: 5%;
-    }
-}
+
 
 /* :: 6.0 Welcome Area CSS */
 
@@ -633,6 +616,7 @@ textarea:focus {
         .hero-slides-thumb {
             img {
                 width: 100%;
+
                 @media #{$breakpoint-xs} {
                     width: 60%;
                     margin: 0 auto;

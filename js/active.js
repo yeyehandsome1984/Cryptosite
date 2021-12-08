@@ -137,7 +137,7 @@ ws.onmessage=(event)=>{
     let price=parseFloat(stockObject.p).toFixed(2);
     etherPriceElement.innerText=price;
     etherPriceElement.style.color=!lastPriceEther|| lastPriceEther===price ?'black' : price>lastPriceEther? 'green':'red'
-    lastPrice=price;
+    lastPriceEther=price;
 }
 
 // Neo
@@ -152,5 +152,82 @@ wsNeo.onmessage=(event)=>{
     let price=parseFloat(stockObject.p).toFixed(2);
     neoPriceElement.innerText=price;
     neoPriceElement.style.color=!lastPriceNeo|| lastPriceNeo===price ?'black' : price>lastPriceNeo? 'green':'red'
-    lastPrice=price;
+    lastPriceNeo=price;
 }
+// bitcoin
+
+let wsBtc =new WebSocket('wss://stream.binance.com:9443/ws/btcusdt@trade');
+let btcPriceElement=document.getElementById('btcPrice')
+let lastPriceBtc=null
+
+
+
+wsBtc.onmessage=(event)=>{
+    let stockObject= JSON.parse(event.data);
+    let price=parseFloat(stockObject.p).toFixed(2);
+    btcPriceElement.innerText=price;
+    btcPriceElement.style.color=!lastPriceBtc|| lastPriceBtc===price ?'black' : price>lastPriceBtc? 'green':'red'
+    lastPriceBtc=price;}
+
+// bitcoinCash
+
+let wsBch =new WebSocket('wss://stream.binance.com:9443/ws/bchusdt@trade');
+let bchPriceElement=document.getElementById('bchPrice')
+let lastPriceBch=null
+
+
+
+wsBch.onmessage=(event)=>{
+    let stockObject= JSON.parse(event.data);
+    let price=parseFloat(stockObject.p).toFixed(2);
+    bchPriceElement.innerText=price;
+    bchPriceElement.style.color=!lastPriceBch|| lastPriceBch===price ?'black' : price>lastPriceBch? 'green':'red'
+    lastPriceBtc=price;}
+
+
+    // Litecoin
+
+let wsLtc =new WebSocket('wss://stream.binance.com:9443/ws/liteusdt@trade');
+let ltcPriceElement=document.getElementById('ltcPrice')
+let lastPriceLtc=null
+
+
+
+wsLtc.onmessage=(event)=>{
+    let stockObject= JSON.parse(event.data);
+    let price=parseFloat(stockObject.p).toFixed(2);
+    ltcPriceElement.innerText=price;
+    ltcPriceElement.style.color=!lastPriceLtc|| lastPriceLtc===price ?'black' : price>lastPriceLtc? 'green':'red'
+    lastPriceLtc=price;}
+
+    
+    // XRP (RIPPLE)
+
+let wsXrp =new WebSocket('wss://stream.binance.com:9443/ws/xrpusdt@trade');
+let xrpPriceElement=document.getElementById('xrpPrice')
+let lastPriceXrp=null
+
+
+
+wsXrp.onmessage=(event)=>{
+    let stockObject= JSON.parse(event.data);
+    let price=parseFloat(stockObject.p).toFixed(2);
+    xrpPriceElement.innerText=price;
+    xrpPriceElement.style.color=!lastPriceXrp|| lastPriceXrp===price ?'black' : price>lastPriceXrp? 'green':'red'
+    lastPriceXrp=price;}
+
+
+        // XLM (Stella)
+
+let wsXlm =new WebSocket('wss://stream.binance.com:9443/ws/xlmusdt@trade');
+let xlmPriceElement=document.getElementById('xlmPrice')
+let lastPriceXlm=null
+
+
+
+wsXlm.onmessage=(event)=>{
+    let stockObject= JSON.parse(event.data);
+    let price=parseFloat(stockObject.p).toFixed(2);
+    xlmPriceElement.innerText=price;
+    xlmPriceElement.style.color=!lastPriceXlm|| lastPriceXlm===price ?'black' : price>lastPriceXlm? 'green':'red'
+    lastPriceXlm=price;}
