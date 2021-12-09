@@ -231,3 +231,18 @@ wsXlm.onmessage=(event)=>{
     xlmPriceElement.innerText=price;
     xlmPriceElement.style.color=!lastPriceXlm|| lastPriceXlm===price ?'black' : price>lastPriceXlm? 'green':'red'
     lastPriceXlm=price;}
+
+           // IOT 
+
+let wsIot =new WebSocket('wss://stream.binance.com:9443/ws/adausdt@trade');
+let iotPriceElement=document.getElementById('iotPrice')
+let lastPriceIot=null
+
+
+
+wsIot.onmessage=(event)=>{
+    let stockObject= JSON.parse(event.data);
+    let price=parseFloat(stockObject.p).toFixed(2);
+    iotPriceElement.innerText=price;
+    iotPriceElement.style.color=!lastPriceIot|| lastPriceIot===price ?'black' : price>lastPriceIot? 'green':'red'
+    lastPriceIot=price;}
