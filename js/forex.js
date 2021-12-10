@@ -53,7 +53,7 @@ const currencySelect2 = document.getElementById("currency2");
       // Fetch data for Bitcoin exchange rate
 
 
-      async function getBtcData() {
+      async function getCoinRate() {
         let response = await fetch(
           "https://api.coingecko.com/api/v3/exchange_rates"
         );
@@ -62,12 +62,13 @@ const currencySelect2 = document.getElementById("currency2");
         return btcdata;
       }
 
-      getBtcData().then((btcdata) => {
+      getCoinRate().then((btcdata) => {
         display_btc(btcdata.rates);
       });
 
       function display_btc(btc) {
         const entry = Object.entries(btc);
+        console.log(entry)
         for (let i = 0; i < entry.length; i++) {
           btcSelect.innerHTML += `<option value="${entry[i][1].name}">${entry[i][1].name}</option>`;
         }
@@ -79,8 +80,9 @@ const currencySelect2 = document.getElementById("currency2");
 
         let btcNumber = btcNum.value;
 
-        let btcValue = "";
+        let btcValue ;
         const entryBtc = Object.entries(btc);
+        console.log(entryBtc)
         for (let i = 0; i < entryBtc.length; i++) {
           if (entryBtc[i][1].name === btcSelected) {
             btcValue = entryBtc[i][1].value;
@@ -88,7 +90,7 @@ const currencySelect2 = document.getElementById("currency2");
         }
 
         //let currencySelected = entryBtc.filter(coin=>coin.name===btcSelected);
-        console.log(entryBtc[2][1].value);
+ 
 
         if (btcSelected != "Bitcoin") {
           return (btcAns.value = btcNumber / btcValue);
@@ -98,18 +100,9 @@ const currencySelect2 = document.getElementById("currency2");
       }
 
       btcBtn.addEventListener("click", () => {
-        getBtcData().then((btcdata) => {
+        getCoinRate().then((btcdata) => {
           btcConvert(btcdata.rates);
         });
       });
-      // added real time date and time information
+ 
 
-      function getCurrentDate() {
-        const date = new Date();
-        document.getElementById("time").textContent = date.toLocaleString(
-          "en-us",
-          { timeZone: "GMT" }
-        );
-      }
-
-      setInterval(getCurrentDate, 1000);
