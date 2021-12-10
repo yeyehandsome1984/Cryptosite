@@ -11,6 +11,10 @@ const volume = document.getElementById("volume");
 const url = document.getElementById("url");
 
 const image = document.getElementById("image");
+const bestRank=document.getElementById('bestRank')
+const nameVol=document.getElementById('nameVol')
+const imgVol=document.getElementById('imgVol')
+
 console.log(select)
 
 async function getBtcData() {
@@ -39,7 +43,7 @@ function retrieveBtcData(data) {
   let exchangeSelected = select.options[select.selectedIndex].value;
   console.log(exchangeSelected);
   let entry = Object.entries(data);
-  console.log(entry[1][1]);
+  console.log(entry[0][1]);
   let get_country = [];
   let get_year = [];
   let get_trustRank = [];
@@ -64,23 +68,27 @@ function retrieveBtcData(data) {
   volume.innerHTML = `${get_volume}`;
   url.innerHTML = `<a href=${get_url}>${get_url}</a> `;
   image.src = get_image;
+  bestRank.src=entry[0][1].image;
  
 }
 
 // choose the best exchange 
-let bestRank=document.getElementById('bestRank')
-let bestRankExchange=document.getElementById('bestRankExchange')
+
 let exchangeLink =document.getElementById('rankSite')
 let ranking=''
+let maxVol
+let volArray
 
 getBtcData().then((data) => {
-    retrieve_exchange_byRank(data);
+    retrieve_exchange_byVolume(data);
+   
   });
+// function to get the relevant platform
 
-function retrieve_exchange_byRank(data){
+function retrieve_exchange_byVolume(data){
     let entry = Object.entries(data);
-    console.log(entry);
-    console.log(entry[2][1].trade_volume_24h_btc);
+  
+    console.log(entry[2][1].image);
       // for (let i = 0; i < entry.length; i++){
       // ranking=  Math.min.apply(Math, entry.map(function(entry) { return entry[i][1].trust_score_rank; }))
       
@@ -88,8 +96,30 @@ function retrieve_exchange_byRank(data){
       let numArray=[]
       for (let i = 0; i < entry.length; i++){
        numArray.push(entry[i][1].trade_volume_24h_btc)
-         return numArray
-}}
+     
+}
+maxVol = Math.max(...numArray)
+console.log(maxVol)
+let get_image_vol="";
+let get_name_vol=[];
+
+
+
+for (let i = 0; i < entry.length; i++) {
+  if (entry[i][1].trade_volume_24h_btc === maxVol){
+ 
+    get_name_vol=entry[i][1].name
+    get_image_vol=entry[i][i].image
+
+
+  }
+}
+nameVol.innerHTML=`${get_name_vol}`
+
+imgVol.src = entry[0][1].image;
+console.log(imgVol)
+console.log(nameVol)
+}
 
 
 

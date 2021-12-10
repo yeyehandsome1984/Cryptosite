@@ -20,13 +20,11 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/contactForm.css">
 
 
 
 </head>
-<style>
-
-</style>
 
 <body>
     <!-- ##### Preloader ##### -->
@@ -152,33 +150,31 @@
                 <div class="col-12">
                     <div class="section-heading text-center mx-auto">
                         <h3>Please select <br><span>a creditable platform</span> </h3>
-                        <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in
-                            euismod erat. Ut at erat et arcu pulvinar cursus a eget nisl. Cras vitae turpis lacinia,
-                            lacinia lacus non, fermentum nisi.</p>
+                        <p>Choose a suitable platform to trade could minimize the risk of scam</p>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <!-- Single Course Area -->
+              
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="single-feature-area mb-100 text-center">
-                        <img id="bestRank"></img>
-                        <div id='bestRankExchange'></div>
+                        <h3>Best Overall Credit Rating</h3>
+                        <img id="bestRank" alt=""/>
+                        <h3>Binance</h3>
                         <p>Make sure the platform chosen has a decent credit ranking</p>
-                        <a href="" class="btn cryptos-btn">Read More</a>
+                        <a href="https://www.binance.com/" class="btn cryptos-btn">Read More</a>
                     </div>
                 </div>
 
                 <!-- Single Course Area -->
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="single-feature-area mb-100 text-center">
-                        <i class="icon-bitcoin"></i>
-                        <h3>No strigs attached</h3>
-                        <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in
-                            euismod erat. Ut at erat et arcu pulvinar cursus a eget nisl. Cras vitae turpis lacinia,
-                            lacinia lacus non, fermentum.</p>
-                        <a href="#" class="btn cryptos-btn" id='rankSite'>Read More</a>
+                        <h3>Highest Trading Volume</h3>
+                        <img id='imgVol' alt=""/>
+                        <h3 id='nameVol' class="mt-3"></h3>
+                        <p>High volume means the platform is active with many investors</p>
+                        <a href="#" class="btn cryptos-btn" id='urlVolume'>Read More</a>
                     </div>
                 </div>
 
@@ -217,43 +213,43 @@
                 <div class="box">
                     <div class="exchange">
                         <div class="infoContainer">
-                            <select name="currency" class="custom-select font-bold col-7" id="exchangeSelect"></select>
+                            <select name="currency" class="custom-select font-bold col-9 text-white" style="background-color: #bdbbb8" id="exchangeSelect"></select>
                             <img class="img-fluid img-thumbnail" alt="" id="image" />
                         </div>
 
-                        <div class="input-group input-group-smv col-8 ">
+                        <div class="input-group input-group-smv col-10 ">
                             <div class="input-group-prepend">
-                                <span class="input-group-text font-bold" id="inputGroup-sizing-sm">country</span>
+                                <span class="input-group-text font-bold text-white"  style="background-color: #ffaf02;" id="inputGroup-sizing-sm">country</span>
                                 <div class="card font-light text-center" id="country"></div>
                             </div>
                         </div>
 
-                        <div class="input-group input-group-sm col-8 ">
+                        <div class="input-group input-group-sm col-10 ">
                             <div class="input-group-prepend">
-                                <span class="input-group-text font-bold" id="inputGroup-sizing-sm">Year</span>
+                                <span class="input-group-text font-bold text-white"  style="background-color: #ffaf02" id="inputGroup-sizing-sm">Year</span>
                                 <div class="card font-light text-center" id="incorpYear"></div>
                             </div>
                         </div>
 
-                        <div class="input-group input-group-sm col-8 ">
+                        <div class="input-group input-group-sm col-10 ">
                             <div class="input-group-prepend">
-                                <span class="input-group-text font-bold" id="inputGroup-sizing-sm">Credit Ranking</span>
+                                <span class="input-group-text font-bold text-white"  style="background-color: #ffaf02"  id="inputGroup-sizing-sm">Credit Ranking</span>
                                 <div class="card font-light text-center" id="creditRank"></div>
                             </div>
                         </div>
 
 
-                        <div class="input-group input-group-sm col-8">
+                        <div class="input-group input-group-sm col-10">
                             <div class="input-group-prepend">
-                                <span class="input-group-text font-bold" id="inputGroup-sizing-sm">Trading Volume
+                                <span class="input-group-text font-bold text-white"  style="background-color: #ffaf02" id="inputGroup-sizing-sm">Trading Volume
                                     (BTC)</span>
                                 <div class="card font-light text-center" id="volume"></div>
                             </div>
                         </div>
 
-                        <div class="input-group input-group-sm col-8 ">
+                        <div class="input-group input-group-sm col-10 ">
                             <div class="input-group-prepend">
-                                <span class="input-group-text font-bold" id="inputGroup-sizing-sm">Website Link</span>
+                                <span class="input-group-text font-bold text-white"  style="background-color: #ffaf02" id="inputGroup-sizing-sm">Website Link</span>
                                 <div class="card font-light text-center" id="url">
                                     <a class="btn btn-link text-center" target="_blank" href=""></a>
                                 </div>
@@ -264,41 +260,41 @@
             </div>
 
             <!-- /*-- derivative trading exchange --*/ -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 mb-3">
                 <h4 class='float-lg-start'>Derivative Trading Platform</h4>
                 <div class="box">
                     <div class="exchange">
                         <div class="infobox">
-                            <select name="currency" class="custom-select font-bold col-8"
+                            <select name="currency" class="custom-select font-bold col-10 text-white "  style="background-color: #bdbbb8"
                                 id="devExchangeSelect"></select>
                             <img class="img-fluid img-thumbnail" alt="" id="devImage" />
                         </div>
 
-                        <div class="input-group input-group-sm col-8 ">
+                        <div class="input-group input-group-sm col-10 "> 
                             <div class="input-group-prepend">
-                                <span class="input-group-text font-bold" id="inputGroup-sizing-sm">Country</span>
+                                <span class="input-group-text font-bold text-white"  style="background-color: #ffaf02" id="inputGroup-sizing-sm">Country</span>
                                 <div class="card font-light text-center" id="devCountry"></div>
                             </div>
-                        </div>
+                        </div> 
 
-                        <div class="input-group input-group-sm col-8">
+                        <div class="input-group input-group-sm col-10">
                             <div class="input-group-prepend">
-                                <span class="input-group-text font-bold" id="inputGroup-sizing-sm">devIncorpYear</span>
+                                <span class="input-group-text font-bold text-white"  style="background-color: #ffaf02" id="inputGroup-sizing-sm">devIncorpYear</span>
                                 <div class="card font-light align-self-center text-center" id="devIncorpYear"></div>
                             </div>
                         </div>
 
-                        <div class="input-group input-group-sm col-8">
+                        <div class="input-group input-group-sm col-10">
                             <div class="input-group-prepend">
-                                <span class="input-group-text font-bold" id="inputGroup-sizing-sm">Number of pairs
+                                <span class="input-group-text font-bold text-white"  style="background-color: #ffaf02" id="inputGroup-sizing-sm">Number of pairs
                                     future</span>
                                 <div class="card font-light text-center" id="futurePairNumber"></div>
                             </div>
                         </div>
 
-                        <div class="input-group input-group-sm col-8 ">
+                        <div class="input-group input-group-sm col-10 ">
                             <div class="input-group-prepend">
-                                <span class="input-group-text font-bold" id="inputGroup-sizing-sm">Number of pairs
+                                <span class="input-group-text font-bold text-white"  style="background-color: #ffaf02" id="inputGroup-sizing-sm">Number of pairs
                                     perpetual</span>
                                 <div class="card font-light align-self-center text-center" id="perpetualPairNumber">
                                 </div>
@@ -306,34 +302,34 @@
                         </div>
 
 
-                        <div class="input-group input-group-sm col-8">
+                        <div class="input-group input-group-sm col-10">
                             <div class="input-group-prepend">
-                                <span class="input-group-text font-bold" id="inputGroup-sizing-sm">Trading Volume
+                                <span class="input-group-text font-bold text-white"  style="background-color: #ffaf02" id="inputGroup-sizing-sm">Trading Volume
                                     (BTC)</span>
                                 <div class="card font-light align-self-center text-center" id="devVolume"></div>
                             </div>
                         </div>
 
-                        <div class="input-group input-group-sm col-8">
+                        <div class="input-group input-group-sm col-10">
                             <div class="input-group-prepend">
-                                <span class="input-group-text font-bold" id="inputGroup-sizing-sm">Open Contracts</span>
+                                <span class="input-group-text font-bold text-white"  style="background-color: #ffaf02" id="inputGroup-sizing-sm">Open Contracts</span>
                                 <div class="card font-light align-middle text-center" id="open"></div>
                             </div>
                         </div>
 
-                        <div class="input-group input-group-sm col-8">
+                        <div class="input-group input-group-sm col-10">
                             <div class="input-group-prepend">
-                                <span class="input-group-text font-bold" id="inputGroup-sizing-sm">Website Link</span>
+                                <span class="input-group-text font-bold text-white"  style="background-color: #ffaf02" id="inputGroup-sizing-sm">Website Link</span>
                                 <div class="card font-light align-self-center text-center" id="devUrl">
                                     <a class="btn btn-link" target="_blank" href=""></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="input-group input-group-sm col-8">
+                        <div class="input-group input-group-sm col-10">
                             <div class="input-group-prepend">
-                                <span class="input-group-text font-bold" id="inputGroup-sizing-sm">Description</span>
-                                <div class="card font-light align-middle height-200" id="description"></div>
+                                <span class="input-group-text font-bold text-white"  style="background-color: #ffaf02" id="inputGroup-sizing-sm">Description</span>
+                                <div class="card font-light align-middle height-100" id="description"></div>
                             </div>
                         </div>
 
@@ -421,68 +417,56 @@
                         </div>
                     </div>
                 </div>
-                <h3 id="time" class="time" style="color:beige "></h3>
+                
     </section>
     <!-- ##### Currency Area End ##### -->
 
-    <!-- ##### Blog Area Start ##### -->
+    <!-- ##### Contact form start ##### -->
     <section class="cryptos-blog-area section-padding-100">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-7">
-                    <div class="blog-area">
-                        <!-- Single Blog Area -->
-                        <div class="single-blog-area d-flex align-items-start">
-                            <!-- Thumbnail -->
-                            <div class="blog-thumbnail">
-                                <img src="img/blog-img/1.jpg" alt="">
-                            </div>
-                            <!-- Content -->
-                            <div class="blog-content">
-                                <a href="#" class="post-title">This Platform Aims to Disrupt the Market</a>
-                                <div class="meta-data">
-                                    <a href="#">Crypto News</a> |
-                                    <a href="#">March 18, 2018</a>
-                                </div>
-                                <p>Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae
-                                    urna consectetur, sit amet maximus nisl sagittis.</p>
-                            </div>
-                        </div>
-                        <!-- Single Blog Area -->
-                        <div class="single-blog-area d-flex align-items-start">
-                            <!-- Thumbnail -->
-                            <div class="blog-thumbnail">
-                                <img src="img/blog-img/2.jpg" alt="">
-                            </div>
-                            <!-- Content -->
-                            <div class="blog-content">
-                                <a href="#" class="post-title">New Hedge Funds invests in Crypto</a>
-                                <div class="meta-data">
-                                    <a href="#">Crypto News</a> |
-                                    <a href="#">March 18, 2018</a>
-                                </div>
-                                <p>Iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit
-                                    amet maximus nisl sagittis. Ut in iaculis enim.</p>
-                            </div>
-                        </div>
-                        <!-- Single Blog Area -->
-                        <div class="single-blog-area d-flex align-items-start">
-                            <!-- Thumbnail -->
-                            <div class="blog-thumbnail">
-                                <img src="img/blog-img/3.jpg" alt="">
-                            </div>
-                            <!-- Content -->
-                            <div class="blog-content">
-                                <a href="#" class="post-title">This Platform Aims to Disrupt the Market</a>
-                                <div class="meta-data">
-                                    <a href="#">Crypto News</a> |
-                                    <a href="#">March 18, 2018</a>
-                                </div>
-                                <p>Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae
-                                    urna consectetur, sit amet maximus nisl sagittis.</p>
-                            </div>
+                <div class="col-12 col-lg-7 d-flex">
+
+                    <div class="col-3 justify-content-center">
+                        <div class="contact-info">
+                            <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+                            <h3>Contact Us</h3>
+                            <h5>We would love to hear from you !</h5>
                         </div>
                     </div>
+                    <div class="col-9">
+                        <div class="contact-form">
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="fname">First Name:</label>
+                              <div class="col-sm-10">          
+                                <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="lname">Last Name:</label>
+                              <div class="col-sm-10">          
+                                <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="email">Email:</label>
+                              <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="comment">Comment:</label>
+                              <div class="col-sm-10">
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                              </div>
+                            </div>
+                            <div class="form-group">        
+                              <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                              </div>
+                            </div>
+                       </div>
+                </div>
                 </div>
 
                 <div class="col-12 col-lg-5">
@@ -490,7 +474,7 @@
 
                         <!-- Single Price Table -->
                         <div class="single-price-table d-flex align-items-center justify-content-between">
-                            <div class="p-content d-flex align-items-center">
+                            <div class="p-content d-flex align-items-center justify-content-between">
                                 <span>01</span>
                                 <img src="img/bg-img/bitcoin.png" alt="">
                                 <p>Bitcoin <span>BTC</span></p>
@@ -634,7 +618,8 @@
     </section>
     <!-- ##### Blog Area End ##### -->
 
-    <footer>
+     
+
 
         <footer class="bg-dark text-center text-white">
             <!-- Grid container -->

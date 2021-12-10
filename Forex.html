@@ -251,15 +251,6 @@
       });
       // added real time date and time information
 
-      function getCurrentDate() {
-        const date = new Date();
-        document.getElementById("time").textContent = date.toLocaleString(
-          "en-us",
-          { timeZone: "GMT" }
-        );
-      }
-
-      setInterval(getCurrentDate, 1000);
     </script>
   </body>
 </html>
