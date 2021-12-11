@@ -86,6 +86,7 @@ const currencySelect2 = document.getElementById("currency2");
         for (let i = 0; i < entryBtc.length; i++) {
           if (entryBtc[i][1].name === btcSelected) {
             btcValue = entryBtc[i][1].value;
+            btcValue=btcValue.toFixed(3)
           }
         }
 
