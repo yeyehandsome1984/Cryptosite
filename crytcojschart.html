@@ -18,11 +18,14 @@
 * {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+     box-sizing: border-box;
     }
 
 
-
+p {
+  font-size: 1.5rem;
+  text-align: center;
+}
   
 .card {
   border: 0.5px solid #364547;
@@ -41,6 +44,9 @@
       padding: 0 1em;
       margin-bottom: 2rem;
 }
+span {
+  font-size: 1.2rem;
+}
 
 </style>
 
@@ -51,19 +57,19 @@
     <div class="row">
       <div class="col-12 col-md-4 col-xl-4">
         <div id="priceBox" class="infoContainer">
-          <h3 class="title text-white" style="background-color: #ffaf02">Crypto Pricing Chart</h3>
+          <h3 class="title text-white p-2 text-center" style="background-color: #ffaf02">Crypto Pricing Chart</h3>
           <div class="chart_div_price"></div>
         </div>
       </div>
-      <div class="col-12 col-md-4 col-xl-4">
+      <div class="col-12 col-md-4 col-xl-4 ">
         <div id="capBox" class="infoContainer">
-          <h5 class="title text-white" style="background-color: #ffaf02">Crypto Market Cap Chart</h5>
+          <h5 class="title text-white p-2 text-center" style="background-color: #ffaf02">Crypto Market Cap Chart</h5>
           <div class="chart_div_cap"></div>
         </div>
       </div>
       <div class="col-12 col-md-4 col-xl-4">
         <div id="volumeBox" class="infoContainer">
-          <h3 class="title text-white" style="background-color: #ffaf02">Crypto Trading Volume Chart</h3>
+          <h3 class="title text-white p-2 text-center" style="background-color: #ffaf02">Crypto Trading Volume Chart</h3>
           <div class="chart_div_volume"></div>
         </div>
       </div>
@@ -73,14 +79,14 @@
     <form class='mt-6'>
       <div class="row">
 
-        <div class='form-group row col-12 col-md-4 col-xl-4'>
+        <div class='form-group row col-12 col-md-4 col-xl-4 m-1'>
           <label for="coin_options" class='fw-bold'>Select A Coin</label>
           <select id='coin_options' class="form-select form-select-lg mb-3">
             Please select a coin
           </select>
         </div>
 
-        <div class='form-group row col-12 col-md-4 col-xl-4'>
+        <div class='form-group row col-12 col-md-4 col-xl-4 m-1'>
           <label for="currency" class='fw-bold'>Select A Currency</label>
           <select class=" form-select form-select-lg mb-3" aria-label=".form-select-lg example" id='currency'>
             <option selected>Please select a currency</option>
@@ -91,7 +97,7 @@
         </div>
 
 
-        <div class='form-group row col-12 col-md-4 col-xl-4'>
+        <div class='form-group row col-12 col-md-4 col-xl-4'}                                                                                                                                                     '>
           <label for="Frequency" class='fw-bold'>Select A Frequency</label>
           <select class="form-select form-select-lg mb-3" aria-label=".form-select-sm example" id='frequency'>
             <option selected>Please select a frequency</option>
@@ -136,7 +142,7 @@
         </div>
       </div>
 
-      <h3 id="time" class="time text-black" style="color:beige "></h3>
+      <h5 id="time" class="time text-black" style="color:beige "></h5>
 
     </div>
 
@@ -281,7 +287,7 @@
             dayHigh.innerHTML = `  <p> $${data.market_data.high_24h.usd}</p>`
             dayLow.innerHTML = ` <p> $${data.market_data.low_24h.usd}</p>`
             document.getElementById("name").innerHTML = `
-                   <img src=${data.image.small} />`
+                   <img style="height:100px; width:100px"src=${data.image.small} />`
 
 
 

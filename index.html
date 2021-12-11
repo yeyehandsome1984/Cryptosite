@@ -72,13 +72,7 @@
                                     <li><a href="#">News</a></li>
                                 </ul>
 
-                                <!-- Newsletter Form -->
-                                <div class="header-newsletter-form">
-                                    <form action="#" method="post">
-                                        <input type="email" name="email" id="email" placeholder="Newsletter">
-                                        <button type="submit">Subscribe</button>
-                                    </form>
-                                </div>
+                           
 
                             </div>
                             <!-- Nav End -->
@@ -149,8 +143,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center mx-auto">
-                        <h3>Please select <br><span>a creditable platform</span> </h3>
-                        <p>Choose a suitable platform to trade could minimize the risk of scam</p>
+                        <h3>Please select <br><span>a suitable platform</span> </h3>
+                        <p>Choose a suitable platform to trade would reduce counterparty risk. Below provide featured platform based on <span style="font-weight: bold;">trading volume, credit rating, trading pairs available and amount of open positions</span> </p>
                     </div>
                 </div>
             </div>
@@ -159,11 +153,11 @@
               
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="single-feature-area mb-100 text-center">
-                        <h3>Best Overall Credit Rating</h3>
-                        <img id="bestRank" alt=""/>
+                        <h3 >Best Overall Credit Rating</h3>
+                        <img id="imgRank" class="mb-3"alt=""/>
                         <h3>Binance</h3>
-                        <p>Make sure the platform chosen has a decent credit ranking</p>
-                        <a href="https://www.binance.com/" class="btn cryptos-btn">Read More</a>
+                        <p>Make sure the platform chosen has a decent credit ranking. A good credit rating shows the platform is less likely to be hacked and scammed</p>
+                        <a  class="btn cryptos-btn" id='urlRank'>Read More</a>
                     </div>
                 </div>
 
@@ -173,32 +167,30 @@
                         <h3>Highest Trading Volume</h3>
                         <img id='imgVol' alt=""/>
                         <h3 id='nameVol' class="mt-3"></h3>
-                        <p>High volume means the platform is active with many investors</p>
-                        <a href="#" class="btn cryptos-btn" id='urlVolume'>Read More</a>
+                        <p>High volume means the platform is active with many investors. High trading volume also means the platform has sufficient income and therefore less bankcruptcy risk.</p>
+                        <a  class="btn cryptos-btn" id='urlVol'>Read More</a>
                     </div>
                 </div>
 
                 <!-- Single Course Area -->
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="single-feature-area mb-100 text-center">
-                        <i class="icon-exchange"></i>
-                        <h3>Small Commisions</h3>
-                        <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in
-                            euismod erat. Ut at erat et arcu pulvinar cursus a eget nisl. Cras vitae turpis lacinia,
-                            lacinia lacus non, fermentum.</p>
-                        <a href="#" class="btn cryptos-btn">Read More</a>
+                        <h3>Trading Pair Available</h3>
+                        <img id="imgPair" class="icon-exchange"/>
+                        <h3 id='namePair' class="mt-3"></h3>
+                        <p>Trading pair available would provide investors a more comprehensive trading experience and likely to be more international in terms of platform structure</p>
+                        <a id='urlPair' class="btn cryptos-btn">Read More</a>
                     </div>
                 </div>
 
                 <!-- Single Course Area -->
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="single-feature-area mb-100 text-center">
-                        <i class="icon-wallet"></i>
-                        <h3>10% Secure</h3>
-                        <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in
-                            euismod erat. Ut at erat et arcu pulvinar cursus a eget nisl. Cras vitae turpis lacinia,
-                            lacinia lacus non, fermentum.</p>
-                        <a href="#" class="btn cryptos-btn">Read More</a>
+                        <h3>Most open positions</h3>
+                        <img id="imgOpen" class="icon-wallet"/>
+                        <h3 id='nameOpen' class='mt-3'>10% Secure</h3>
+                        <p>This criteria is only applicable for derivative trading. More open positions shows investors are more active in derivative trading in that platform</p>
+                        <a  id='urlOpen' class="btn cryptos-btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -217,7 +209,7 @@
                             <img class="img-fluid img-thumbnail" alt="" id="image" />
                         </div>
 
-                        <div class="input-group input-group-smv col-10 ">
+                        <div class="input-group input-group-sm col-10 ">
                             <div class="input-group-prepend">
                                 <span class="input-group-text font-bold text-white"  style="background-color: #ffaf02;" id="inputGroup-sizing-sm">country</span>
                                 <div class="card font-light text-center" id="country"></div>
@@ -340,31 +332,6 @@
         </div>
     </div>
 
-    <!-- ##### Exchange Selection End ##### -->
-
-    <!-- ##### About Area Start ##### -->
-    <!-- <section class="cryptos-about-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                    <div class="about-thumbnail mb-100">
-                        <img src="img/bg-img/about.png" alt="">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="about-content mb-100">
-                        <div class="section-heading">
-                            <h3>Let’s change <br><span>the world</span> together</h3>
-                            <h5>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod erat. Ut at erat et arcu pulvinar cursus a eget nisl.</h5>
-                            <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod erat. Ut at erat et arcu pulvinar cursus a eget nisl. Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi.</p>
-                            <a href="#" class="btn cryptos-btn mt-30">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- ##### About Area End ##### -->
 
     <!-- ##### Currency Area Start ##### -->
     <section class="currency-calculator-area section-padding-100 bg-img bg-overlay"
@@ -386,7 +353,7 @@
 
                 <div class="row ">
 
-                    <div class='d-flex flex-column flex-md-row' id="convertBox">
+                    <div class='d-flex flex-column flex-md-row'  id="convertBox">
                         <div class='col-12 col-md-6 md=1' id="currencypart">
                             <h3 style="color:aliceblue" class='text-center'>Convert currencies </h3>
                             <div class="col-12 d-flex flex-row">
@@ -425,16 +392,14 @@
     <section class="cryptos-blog-area section-padding-100">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-7 d-flex">
+                <div class="col-12 col-md-7 d-md-flex">
 
-                    <div class="col-3 justify-content-center">
-                        <div class="contact-info">
+                    <div class="col col-md-3" id='contactColume'>
                             <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
-                            <h3>Contact Us</h3>
-                            <h5>We would love to hear from you !</h5>
-                        </div>
+                            <h4 id='contactUS'>Contact Us</h4>
+                            <h5 id='weLikeHear'>We would love to hear from you !</h5>
                     </div>
-                    <div class="col-9">
+                    <div class="col col-md-9" >
                         <div class="contact-form">
                             <div class="form-group">
                               <label class="control-label col-sm-2" for="fname">First Name:</label>
@@ -462,14 +427,14 @@
                             </div>
                             <div class="form-group">        
                               <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-default">Submit</button>
+                                <button type="submit" class="btn btn-default" id="sumbitBtn">Submit</button>
                               </div>
                             </div>
                        </div>
                 </div>
                 </div>
 
-                <div class="col-12 col-lg-5">
+                <div class="col-12 col-md-5">
                     <div class="cryptos-prices-table">
 
                         <!-- Single Price Table -->
@@ -618,17 +583,7 @@
     </section>
     <!-- ##### Blog Area End ##### -->
 
-    <section id='news' class="section-padding-100">
-        <div class="container">
-            <a href="#" class="brand-logo">News Api</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li class="active"><a href="index.html">News</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-            </ul>
-        </div>
-    </section>
-
+   
 
         <footer class="bg-dark text-center text-white">
             <!-- Grid container -->
@@ -686,6 +641,7 @@
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    
 
     <!-- Popper js -->
     <script src="js/bootstrap/popper.min.js"></script>
@@ -707,6 +663,9 @@
         </script>
     <script src="https://kit.fontawesome.com/9d892b4fd1.js" crossorigin="anonymous"></script>
 
-</body>
+
+
+
+    
 
 </html>

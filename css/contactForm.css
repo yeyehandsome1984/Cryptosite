@@ -6,11 +6,12 @@
     padding: 4%;
     height: 400px;
 }
-.col-3{
+#contactColume{
     background: #ffaf02 !important;
     padding: 4%;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
+   
 }
 .contact-info{
     margin-top:10%;
@@ -39,3 +40,15 @@
 .contact-form button:focus{
     box-shadow:none;
 }
+
+@media (max-width: 950px) {
+    #contactUS { font-size: 1rem; }
+    #weLikeHear { display: none; }
+}
+
+
+@media (max-width: 950px) {
+    .input-group-text { font-size: 5px; }
+
+}
+

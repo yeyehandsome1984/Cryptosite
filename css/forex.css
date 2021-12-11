@@ -49,7 +49,9 @@
     margin-top: 1rem;
   }
 
-   
+   #convertBox {
+     min-height: 100px;
+   }
   
   #btcEquivalent{
     background: #edeef7;
