@@ -3,7 +3,6 @@
 @import 'mixin';
 @import 'responsive';
 
-/* [Master Stylesheet v1.0] */
 
 /* :: :: 1.0 Import Fonts */
 
@@ -23,7 +22,7 @@
 @import 'css/contactForm.css';
 
 
-/* :: 3.0 Base CSS */
+/* :: base CSS */
 
 * {
     margin: 0;
@@ -775,7 +774,7 @@ textarea:focus {
 
 /* :: 9.0 Blog Area CSS */
 
-
+/
 
 .cryptos-prices-table {
     @media #{$breakpoint-md} {
