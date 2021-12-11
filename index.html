@@ -37,9 +37,9 @@
 
 
         <!-- Navbar Area -->
-        <div class="cryptos-main-menu">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container">
+        <div class="cryptos-main-menu navbar-fixed-top">
+            <div class="classy-nav-container breakpoint-off   ">
+                <div class="container ">
                     <!-- Menu -->
                     <nav class="classy-navbar justify-content-between" id="cryptosNav">
 
@@ -64,12 +64,10 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-
                                     <li><a href="crytcojschart.html">Crypto Chart</a>
-
                                     <li><a href="#conversion">Conversion</a></li>
                                     <li><a href="#exchange">Exchange</a></li>
-                                    <li><a href="#">News</a></li>
+                                    <li><a href="#contactForm">Contact</a></li>
                                 </ul>
 
                            
@@ -335,14 +333,13 @@
 
     <!-- ##### Currency Area Start ##### -->
     <section class="currency-calculator-area section-padding-100 bg-img bg-overlay"
-        style="background-image: url(img/bg-img/bg-2.jpg);">
+        style="background-image: url(img/bg-img/bg-2.jpg);" id="contactForm">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center white mx-auto">
                         <h3 class="mb-4">Cryptocurrency Calculator</h3>
-                        <h5 class="mb-2">It is important to have a basic understanding your cash holding can convert
-                            into how many bitcoins. Let us do some simple calculation</h5>
+                        <h5 class="mb-2">It is important to have a basic understanding how much your investable capital worth in terms of bitcoin. Let us do some simple calculation</h5>
 
                     </div>
                 </div>
@@ -351,10 +348,10 @@
             <!--converter session-->
             <div class="container-fluid" id='conversion'>
 
-                <div class="row ">
+                <div class="row " id="convertBox">
 
-                    <div class='d-flex flex-column flex-md-row'  id="convertBox">
-                        <div class='col-12 col-md-6 md=1' id="currencypart">
+                 
+                        <div class='col-12 col-md-6 ' id="currencypart">
                             <h3 style="color:aliceblue" class='text-center'>Convert currencies </h3>
                             <div class="col-12 d-flex flex-row">
                                 <div class="col-6" id='left_box'>
@@ -371,7 +368,7 @@
                                 id="btn_currency_convert">Convert</button>
                         </div>
 
-                        <div class='col-12 col-md-6 ml-md-5 ' id="btc_box">
+                        <div class='col-12 col-md-6  ' id="btc_box">
                             <h3 style="color:aliceblue" class='text-center'>Convert into Bitcoin </h3>
                             <select name="btcSelect" class="btcSelect" id="btcSelect"></select>
                             <input class='form-control' type="text" name="" id="btcNum"
@@ -382,14 +379,14 @@
                             </div>
                             <button class="col-12 btn btn-secondary btn-lg btn-block mt-1" id="btcBtn">Convert</button>
                         </div>
-                    </div>
+                   
                 </div>
                 
     </section>
     <!-- ##### Currency Area End ##### -->
 
     <!-- ##### Contact form start ##### -->
-    <section class="cryptos-blog-area section-padding-100">
+    <section class="section-padding-100">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-md-7 d-md-flex">
