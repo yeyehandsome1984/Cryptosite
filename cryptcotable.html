@@ -75,27 +75,30 @@ tr td {
 </head>
 <body>
     <!-- create table -->
-   <table class="table table-striped table-responsive-sm" id='leaderBoard'>
-    <caption>Key data highlights</caption>
-       <thead class="thead-dark">
-           <tr >
-               <th class="rank"><abbr title="position">Rank</abbr></th>
-               <th class="name ">Name</th>
-               <th class="symbol">Symbol</th>
-               <th class="price">Price(USD)</th>
-               <th class="marketCap">MarCap (USDm)</th>
-               <th class="circulating_supply">Supply(mil)</th>
-               <th class="volume">Volume(24hrs)</th>
-               <th class="percentage_change">24h %</th>
-               <th class="day_high">day_high</th>
-               <th class="day_low">day_low</th>
-               
-           </tr>
-       </thead>
-       <tbody id='cryptocurrencies'>
-
-       </tbody>
-   </table>
+    <div class="table-responsive-md" >
+          
+        <table class="table table-hover table-sm" id='leaderBoard'>
+         
+            <thead class="thead-dark">
+                <tr >
+                    <th class="rank"><abbr title="position">Rank</abbr></th>
+                    <th class="name ">Name</th>
+                    <th class="symbol">Symbol</th>
+                    <th class="price">Price(USD)</th>
+                    <th class="marketCap">MarCap (USDm)</th>
+                    <th class="circulating_supply">Supply(mil)</th>
+                    <th class="volume">Volume(24hrs)</th>
+                    <th class="percentage_change">24h %</th>
+                    <th class="day_high">day_high</th>
+                    <th class="day_low">day_low</th>
+                    
+                </tr>
+            </thead>
+            <tbody id='cryptocurrencies'>
+     
+            </tbody>
+        </table>
+    </div>
    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' type='text/Javascript'></script>
    <script>
        //fetch data
