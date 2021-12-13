@@ -25,16 +25,9 @@
 tr td {
     text-align: center;
 }
-#leaderBoard #cryptocurrencies tr {
-          
-            clear: both;
-       
-         
-            -moz-transition-duration: 1s;
-            -webkit-transition-duration: 1s;
-            -ms-transition-duration:1s;
 
-        }
+
+
 p {
   font-size: 1.5rem;
   text-align: center;
@@ -65,8 +58,9 @@ span {
     h5 { font-size: 1em; }
 
 }
-#myPieChart {
-  max-width: 70%;
+.chart-pie-div>canvas {
+ 
+  max-height: 300px;
 }
 
 </style>
@@ -171,7 +165,7 @@ span {
         <div class="col col-md-6 " style="max-height:min-content;">
           <div id="capBox" class="infoContainer">
             <h5 class="title text-center">Market Cap distribution</h5>
-            <div class="chart_pie_div"></div>
+            <div class="chart-pie-div"></div>
           </div>
      </div>
       </div>
@@ -415,7 +409,7 @@ span {
 
   // --- pieChart relating to market cap --
 
-      const chartDivPiePrice = document.querySelector(".chart_pie_div");
+      const chartDivPiePrice = document.querySelector(".chart-pie-div");
 
         async function getPieData() {
         let response = await fetch(
