@@ -92,9 +92,12 @@
                     <div class="row h-100 align-items-center">
                         <div class="col-12 col-md-7">
                             <div class="hero-slides-content">
-                                <h2 data-animation="fadeInUp" data-delay="100ms">Sail your Cryptco Journey with <span> Helpful Support Group</span></h2>
-                                <h6 data-animation="fadeInUp" data-delay="400ms">We support each other during Cryptco investment</h6>
-                                <a href="crytcojschart.html" class="btn cryptos-btn" data-animation="fadeInUp" data-delay="700ms">Read
+                                <h2 data-animation="fadeInUp" data-delay="100ms">Sail your Cryptco Journey with <span>
+                                        Helpful Support Group</span></h2>
+                                <h6 data-animation="fadeInUp" data-delay="400ms">We support each other during Cryptco
+                                    investment</h6>
+                                <a href="crytcojschart.html" class="btn cryptos-btn" data-animation="fadeInUp"
+                                    data-delay="700ms">Read
                                     More</a>
                             </div>
                         </div>
@@ -118,7 +121,8 @@
                                 </h2>
                                 <h6 data-animation="fadeInUp" data-delay="400ms">Accurate and sufficient information and
                                     guidance are the key to investment success</h6>
-                                <a href="crytcojschart.html" class="btn cryptos-btn" data-animation="fadeInUp" data-delay="700ms">Read
+                                <a href="crytcojschart.html" class="btn cryptos-btn" data-animation="fadeInUp"
+                                    data-delay="700ms">Read
                                     More</a>
                             </div>
                         </div>
@@ -142,7 +146,7 @@
                     <div class="section-heading text-center mx-auto">
                         <h3>Please select <br><span>a suitable platform</span> </h3>
                         <p>Choose a suitable platform to trade would reduce counterparty risk. Below provide featured
-                            platform based on <span style="font-weight: bold;">trading volume, credit rating, trading
+                            platform based on <span style="font-weight: bold; font-size: 1rem;">trading volume, credit rating, trading
                                 pairs available and amount of open positions</span> </p>
                     </div>
                 </div>
@@ -153,8 +157,8 @@
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="single-feature-area mb-100 text-center">
                         <h3>Best Overall Credit Rating</h3>
-                        <img id="imgRank" class="mb-3" alt="" />
-                        <h3>Binance</h3>
+                        <img id="imgRank" class="mb-3" />
+                        <h3 id='nameRank'></h3>
                         <p>Make sure the platform chosen has a decent credit ranking. A good credit rating shows the
                             platform is less likely to be hacked and scammed</p>
                         <a class="btn cryptos-btn" id='urlRank'>Read More</a>
@@ -167,8 +171,8 @@
                         <h3>Highest Trading Volume</h3>
                         <img id='imgVol' alt="" />
                         <h3 id='nameVol' class="mt-3"></h3>
-                        <p>High volume means the platform is active with many investors. High trading volume also means
-                            the platform has sufficient income and therefore less bankcruptcy risk.</p>
+                        <p>High volume means the investors are actively trading on that platform and therefore likely to be sustainable financially.
+                            </p>
                         <a class="btn cryptos-btn" id='urlVol'>Read More</a>
                     </div>
                 </div>
@@ -188,7 +192,7 @@
                 <!-- Single Course Area -->
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="single-feature-area mb-100 text-center">
-                        <h3>Most open positions</h3>
+                        <h3>Most Open Positions</h3>
                         <img id="imgOpen" class="icon-wallet" />
                         <h3 id='nameOpen' class='mt-3'>10% Secure</h3>
                         <p>This criteria is only applicable for derivative trading. More open positions shows investors
@@ -200,8 +204,8 @@
         </div>
     </div>
 
-    <!-- /* currency conversion area */ -->
-    <div class="container" id='exchange'>
+    <!-- /* exchange selection area */ -->
+    <div class="container mt-5" id='exchange'>
         <div class="row">
             <div class="col-12 col-md-6 mb-3">
                 <h4 class='float-lg-start'>Trading Platform</h4>
@@ -273,24 +277,24 @@
 
                         <div class="input-group input-group-sm col-10 ">
                             <div class="input-group-prepend">
-                                <span class="input-group-text font-bold text-white p-2" style="background-color: #ffaf02"
-                                    id="inputGroup-sizing-sm">Country</span>
+                                <span class="input-group-text font-bold text-white p-2"
+                                    style="background-color: #ffaf02" id="inputGroup-sizing-sm">Country</span>
                                 <div class="card font-light text-center" id="devCountry"></div>
                             </div>
                         </div>
 
                         <div class="input-group input-group-sm col-10">
                             <div class="input-group-prepend">
-                                <span class="input-group-text font-bold text-white p-2" style="background-color: #ffaf02"
-                                    id="inputGroup-sizing-sm">Year of Inc</span>
+                                <span class="input-group-text font-bold text-white p-2"
+                                    style="background-color: #ffaf02" id="inputGroup-sizing-sm">Year of Inc</span>
                                 <div class="card font-light align-self-center text-center" id="devIncorpYear"></div>
                             </div>
                         </div>
 
                         <div class="input-group input-group-sm col-10">
                             <div class="input-group-prepend">
-                                <span class="input-group-text p-2 font-bold text-white" style="background-color: #ffaf02"
-                                    id="inputGroup-sizing-sm">Number of pairs
+                                <span class="input-group-text p-2 font-bold text-white"
+                                    style="background-color: #ffaf02" id="inputGroup-sizing-sm">Number of pairs
                                     future</span>
                                 <div class="card font-light text-center" id="futurePairNumber"></div>
                             </div>
@@ -298,8 +302,8 @@
 
                         <div class="input-group input-group-sm col-10 ">
                             <div class="input-group-prepend">
-                                <span class="input-group-text p-2 font-bold text-white" style="background-color: #ffaf02"
-                                    id="inputGroup-sizing-sm">Number of pairs
+                                <span class="input-group-text p-2 font-bold text-white"
+                                    style="background-color: #ffaf02" id="inputGroup-sizing-sm">Number of pairs
                                     perpetual</span>
                                 <div class="card font-light align-self-center text-center" id="perpetualPairNumber">
                                 </div>
@@ -309,8 +313,8 @@
 
                         <div class="input-group input-group-sm col-10">
                             <div class="input-group-prepend">
-                                <span class="input-group-text p-2 font-bold text-white" style="background-color: #ffaf02"
-                                    id="inputGroup-sizing-sm">Trading Volume
+                                <span class="input-group-text p-2 font-bold text-white"
+                                    style="background-color: #ffaf02" id="inputGroup-sizing-sm">Trading Volume
                                     (BTC)</span>
                                 <div class="card font-light align-self-center text-center" id="devVolume"></div>
                             </div>
@@ -318,16 +322,16 @@
 
                         <div class="input-group input-group-sm col-10">
                             <div class="input-group-prepend">
-                                <span class="input-group-text p-2 font-bold text-white" style="background-color: #ffaf02"
-                                    id="inputGroup-sizing-sm">Open Contracts</span>
+                                <span class="input-group-text p-2 font-bold text-white"
+                                    style="background-color: #ffaf02" id="inputGroup-sizing-sm">Open Contracts</span>
                                 <div class="card font-light align-middle text-center" id="open"></div>
                             </div>
                         </div>
 
                         <div class="input-group input-group-sm col-10">
                             <div class="input-group-prepend">
-                                <span class="input-group-text p-2 font-bold text-white" style="background-color: #ffaf02"
-                                    id="inputGroup-sizing-sm">Website Link</span>
+                                <span class="input-group-text p-2 font-bold text-white"
+                                    style="background-color: #ffaf02" id="inputGroup-sizing-sm">Website Link</span>
                                 <div class="card font-light align-self-center text-center" id="devUrl">
                                     <a class="btn btn-link" target="_blank" href=""></a>
                                 </div>
@@ -336,8 +340,8 @@
 
                         <div class="input-group input-group-sm col-10">
                             <div class="input-group-prepend">
-                                <span class="input-group-text p-2 font-bold text-white" style="background-color: #ffaf02"
-                                    id="inputGroup-sizing-sm">Description</span>
+                                <span class="input-group-text p-2 font-bold text-white"
+                                    style="background-color: #ffaf02" id="inputGroup-sizing-sm">Description</span>
                                 <div class="card font-light align-middle height-100" id="description"></div>
                             </div>
                         </div>
@@ -381,8 +385,7 @@
                             </div>
                             <div class="col-6" id='right_box'>
                                 <select name="currency2" class="font-bold text-center" id='currency2'></select>
-                                <input class='form-control' type="text" name="" id="ans"  
-                                disabled />
+                                <input class='form-control' type="text" name="" id="ans" disabled />
                             </div>
                         </div>
                         <button class='col-12 btn btn-secondary btn-lg btn-block mt-1 mb-3'
@@ -392,10 +395,10 @@
                     <div class='col-12 col-md-6 ' id="btc_box">
                         <h3 style="color:aliceblue" class='text-center'>Convert into Bitcoin </h3>
                         <select name="btcSelect" class="font-bold text-center" id="btcSelect"></select>
-                        <input class='form-control mb-1' type="text" name="" id="btcNum" 
+                        <input class='form-control mb-1' type="text" name="" id="btcNum"
                             placeholder="Please input amount to be converted into BTC" />
                         <div class="btcEquivalent d-flex">
-                             <span class='col-5 bg-light text-center text-justify'>BTC Amount</span>
+                            <span class='col-5 bg-light text-center text-justify'>BTC Amount</span>
                             <input class='col-7 form-control ml-1' type="text" name="" id="btcAns" disabled />
                         </div>
                         <button class="col-12 btn btn-secondary btn-lg btn-block mt-1" id="btcBtn">Convert</button>
@@ -415,7 +418,7 @@
                     <div class="col-10 col-md-3 text-center" id='contactColume'>
                         <img src="https://image.ibb.co/kUASdV/contact-image.png" class="rounded" alt="image" />
                         <h4 class="text-center" style="color: white;" id='contactUS'>Contact Us</h4>
-                        <p style="font-size: 1rem" id='weLikeHear' >We would love to hear from you !</p>
+                        <p style="font-size: 1rem" id='weLikeHear'>We would love to hear from you !</p>
                     </div>
                     <div class="col col-md-9">
                         <div class="contact-form">

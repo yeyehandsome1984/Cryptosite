@@ -6,7 +6,7 @@ const select = document.getElementById("exchangeSelect");
 
 const country = document.getElementById("country");
 const year = document.getElementById("incorpYear");
-const creditRank = document.getElementById("creditRank");
+
 const volume = document.getElementById("volume");
 const url = document.getElementById("url");
 
@@ -57,7 +57,7 @@ function retrieveBtcData(data) {
       get_country = entry[i][1].country;
       get_year = entry[i][1].year_established;
       get_trustRank = entry[i][1].trust_score_rank;
-      get_volume = entry[i][1].trade_volume_24h_btc;
+      get_volume = entry[i][1].trade_volume_24h_btc.toFixed(0);
       get_url = entry[i][1].url;
       get_image = entry[i][1].image;
     }
@@ -77,7 +77,7 @@ function retrieveBtcData(data) {
 
 getBtcData().then((data) => {
     retrieve_exchange_byVolume(data);
-    retrieve_exchange_byrank(data)
+    retrieve_exchange_byRank(data)
    
   });
 //--- function to get the relevant platform---//
@@ -133,7 +133,7 @@ function retrieve_exchange_byRank(data){
   
  
       let bestRankArray=[]
-      for (let i = 0; i < entry.trust_score_rank; i++){
+      for (let i = 0; i < entry.length; i++){
        bestRankArray.push(entry[i][1].trust_score_rank)
      
 }
@@ -157,7 +157,7 @@ for (let i = 0; i < entry.length; i++) {
 }
 document.getElementById('nameRank').innerHTML=`${get_name_rank}`
 
-document.getElementById('imgRank').src = get_image_rank
+document.getElementById('imgRank').src = get_image_rank;
 document.getElementById('urlRank').href = get_url_rank;
 
 }
