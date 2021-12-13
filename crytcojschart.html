@@ -55,7 +55,10 @@ span {
 }
 
 @media (max-width: 756px) {
-    h5 { font-size: 2em; }
+    h5 { font-size: 1rem; }
+    .infoContainer>h5 
+      { font-size: 1.5rem; }
+    
 
 }
 .chart-pie-div>canvas {
@@ -73,19 +76,19 @@ span {
       <div class="col-12 col-md-4 col-xl-4">
         <div id="priceBox" class="infoContainer">
           <h5 class="title text-white p-2 text-center" style="background-color: #ffaf02">Crypto Pricing Chart</h5>
-          <div class="chart_div_price"></div>
+          <div class="chart-div-price"></div>
         </div>
       </div>
       <div class="col-12 col-md-4 col-xl-4 ">
         <div id="capBox" class="infoContainer">
           <h5 class="title text-white p-2 text-center" style="background-color: #ffaf02">Crypto Market Cap Chart</h5>
-          <div class="chart_div_cap"></div>
+          <div class="chart-div-cap"></div>
         </div>
       </div>
       <div class="col-12 col-md-4 col-xl-4">
         <div id="volumeBox" class="infoContainer">
           <h5 class="title text-white p-2 text-center" style="background-color: #ffaf02">Crypto Trading Volume Chart</h5>
-          <div class="chart_div_volume"></div>
+          <div class="chart-div-volume"></div>
         </div>
       </div>
     </div>
@@ -95,8 +98,8 @@ span {
       <div class="row">
 
         <div class='form-group row col-12 col-md-4 col-xl-4 m-1'>
-          <label for="coin_options" class='fw-bold'>Select A Coin</label>
-          <select id='coin_options' class="form-select form-select-lg mb-3">
+          <label for="coin-options" class='fw-bold'>Select A Coin</label>
+          <select id='coin-options' class="form-select form-select-lg mb-3">
             Please select a coin
           </select>
         </div>
@@ -204,10 +207,10 @@ span {
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <script src="js/jquery/cryptoTable.js"></script>
     <script>
-      const coinSelector = document.getElementById("coin_options");
-      const chartDivPrice = document.querySelector(".chart_div_price");
-      const chartDivCap = document.querySelector(".chart_div_cap");
-      const chartDivVolume = document.querySelector(".chart_div_volume");
+      const coinSelector = document.getElementById("coin-options");
+      const chartDivPrice = document.querySelector(".chart-div-price");
+      const chartDivCap = document.querySelector(".chart-div-cap");
+      const chartDivVolume = document.querySelector(".chart-div-volume");
       const currencySelector = document.getElementById('currency')
       const frequencySelector = document.getElementById('frequency')
       const spotPrice = document.getElementById('spotPrice')

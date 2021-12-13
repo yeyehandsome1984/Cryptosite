@@ -4,10 +4,10 @@
   .currencyHeader {
     text-align: center;
   }
-  select {
+  #convertBox select {
    
     height: 40px;
-    font-size: 2em;
+    font-size: 3em;
     cursor: pointer;
     outline: none;
     background: #ffaf02;
@@ -47,7 +47,7 @@
    #convertBox {
      min-height: 100px;
    }
-  
+
   #btcEquivalent{
     background: #edeef7;
     border-radius: 10px;
