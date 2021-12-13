@@ -11,7 +11,7 @@ const volume = document.getElementById("volume");
 const url = document.getElementById("url");
 
 const image = document.getElementById("image");
-const bestRank=document.getElementById('bestRank')
+
 const nameVol=document.getElementById('nameVol')
 const imgVol=document.getElementById('imgVol')
 const urlVol=document.getElementById('urlVol')
@@ -77,9 +77,12 @@ function retrieveBtcData(data) {
 
 getBtcData().then((data) => {
     retrieve_exchange_byVolume(data);
+    retrieve_exchange_byrank(data)
    
   });
-// function to get the relevant platform
+//--- function to get the relevant platform---//
+
+// select exchange by volume
 let maxVol
 function retrieve_exchange_byVolume(data){
     let entry = Object.entries(data);
@@ -117,11 +120,47 @@ nameVol.innerHTML=`${get_name_vol}`
 imgVol.src = get_image_vol
 urlVol.href = get_url_vol;
 
-document.getElementById('urlRank').href=get_url_vol;
-document.getElementById('imgRank').src=get_image_vol;
+
 
 }
 
+
+// select exchange by Trust Score
+let bestRank
+
+function retrieve_exchange_byRank(data){
+    let entry = Object.entries(data);
+  
+ 
+      let bestRankArray=[]
+      for (let i = 0; i < entry.trust_score_rank; i++){
+       bestRankArray.push(entry[i][1].trust_score_rank)
+     
+}
+bestRank= Math.min(...bestRankArray)
+console.log(bestRank)
+let get_image_rank="";
+let get_name_rank=[];
+let get_url_rank=""
+
+
+
+for (let i = 0; i < entry.length; i++) {
+  if (entry[i][1].trust_score_rank === bestRank){
+ 
+    get_name_rank=entry[i][1].name
+    get_image_rank=entry[i][1].image
+    get_url_rank=entry[i][1].url
+    
+    
+  }
+}
+document.getElementById('nameRank').innerHTML=`${get_name_rank}`
+
+document.getElementById('imgRank').src = get_image_rank
+document.getElementById('urlRank').href = get_url_rank;
+
+}
 
 
 
@@ -265,8 +304,6 @@ document.getElementById('urlPair').href = get_url_pair;
 
 }
 // get exchange with most open position
-
-
 
 let maxOpen
 function retrieve_exchange_byopen(data){
