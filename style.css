@@ -510,13 +510,13 @@ textarea:focus {
     visibility: visible; }
 
 /* :: 7.0 Feature Area CSS */
-.cryptos-feature-area {
+.platform-feature-area {
   position: relative;
   z-index: 1;
   padding-left: 45px;
   padding-right: 45px; }
   @media only screen and (max-width: 767px) {
-    .cryptos-feature-area {
+    .platform-feature-area {
       padding-left: 0;
       padding-right: 0; } }
 
@@ -667,51 +667,6 @@ textarea:focus {
       .bottom-footer-area p a:hover {
         color: #ffaf02; }
 
-
-/* :: 13.0 Guideline Step CSS */
-.guideline-content {
-  position: relative;
-  z-index: 1; }
-  .guideline-content .single-step {
-    padding: 35px 20px 30px;
-    background-color: #ffffff;
-    border-bottom: 3px solid #ffaf02;
-    margin-bottom: 25px;
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms; }
-    .guideline-content .single-step:last-child {
-      margin-bottom: 0; }
-    .guideline-content .single-step .quantity {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 70px;
-      flex: 0 0 70px;
-      max-width: 70px;
-      width: 70px;
-      font-size: 36px;
-      font-weight: 900;
-      line-height: 1;
-      color: #ffaf02;
-      -webkit-transition-duration: 500ms;
-      transition-duration: 500ms; }
-    .guideline-content .single-step .step-content h6 {
-      font-size: 12px;
-      text-transform: uppercase;
-      font-weight: 700;
-      -webkit-transition-duration: 500ms;
-      transition-duration: 500ms; }
-    .guideline-content .single-step .step-content p {
-      margin-bottom: 0;
-      -webkit-transition-duration: 500ms;
-      transition-duration: 500ms; }
-    .guideline-content .single-step:hover {
-      background-color: #292929; }
-      .guideline-content .single-step:hover .step-content h6,
-      .guideline-content .single-step:hover .step-content p {
-        color: #ffffff; }
-
-@media only screen and (max-width: 767px) {
-  .guideline-thumb {
-    margin-top: 100px; } }
 
 
 
