@@ -1,4 +1,8 @@
 
+.currency-calculator-area {
+  position: relative;
+  z-index: 1;
+  background-attachment: fixed; }
 
 
   .currencyHeader {
@@ -44,10 +48,7 @@
     margin-top: 1rem;
   }
 
-   #convertBox {
-     min-height: 100px;
-   }
-
+ 
   #btcEquivalent{
     background: #edeef7;
     border-radius: 10px;
@@ -64,5 +65,9 @@
   
   ::-webkit-input-placeholder { 
 color: rgba(0, 0, 0, 0.6);
-font-size: 0.5em !important;
+font-size: 0.3em !important;
+}
+
+.form-control {
+  font-size:0.3rem
 }

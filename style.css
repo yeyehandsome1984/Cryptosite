@@ -519,15 +519,8 @@ textarea:focus {
       .single-feature-area.style-2.active p, .single-feature-area.style-2:hover p, .single-feature-area.style-2:focus p {
         color: #292929; }
 
-/* :: 8.0 Currency Calculator Area CSS */
-.currency-calculator-area {
-  position: relative;
-  z-index: 1;
-  background-attachment: fixed; }
 
 
-
-/* :: 9.0 Blog Area CSS */
 
 .single-price-table {
   position: relative;

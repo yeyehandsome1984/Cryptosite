@@ -27,7 +27,7 @@ Latest commit 687f09a on Feb 22
 
 # **LiveFITT.beta**
 ## Context
-This project includes writing custom HTML5, CSS3 and Vanila JavaScript code to create a webpage that serve the following purpose: 
+This project includes writing custom HTML5, CSS3, Vanila JavaScript code to create a webpage that serve the following purpose: 
 * Show the user where are the location of the ActiveSG Gyms(hereinafter, known as "gym") in Singapore.
 * Display the live occupancy rate and the average occupancy of each gym over one-hour periods in the past week.
 * Allow users to read and interact with the data chart to plan out future visits.
@@ -51,7 +51,7 @@ By providing with the said info, it will help users decide when and which outlet
 
 # Strategy
 ## Identifying External Users
-With the primary purpose mentioned above, the website's primary users should be Fitness/Gym enthusiast across all ages. 
+With the primary purpose mentioned above, the website's primary users should be Crypto investors/traders enthusiast. 
 
 ## Identifying External Users' Goals
 The users' goal here is to get the neccessary information they want to make a decision. 
@@ -376,35 +376,34 @@ Several other tools that played a role in this application:
 For API,
 * [Axios](https://github.com/axios/axios)
 
-For map,
-* [Leaflet](https://leafletjs.com/)
-* [Leaflet Geometry.Util](https://github.com/makinacorpus/Leaflet.GeometryUtil)
 
 For styling,
 * [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+
+for font, 
 
 For deployment,
 * [Github](https://github.com/)
 
 For graph,
-* [ApexCharts](https://apexcharts.com/)
+* [JSChart](https://www.chartjs.org/)
 
 For icons,
 * [Flaticon](https://www.flaticon.com/)
 
-For validating markup,
-* [W3 Markup Validation Service](http://validator.w3.org/)
+
 
 # References
 For API References,
-* [Gym Details](https://data.gov.sg/)
-* [Live Occupancy Data](https://gym-tracker.data.gov.sg/)
+* [Cryptco live price](https://data.gov.sg/)
+* [Forex conversion among Fiat currencies](https://api.frankfurter.app/currencies)
+* []
 
 # Acknowledgments
 * Mr Paul Chor - For all the countless suggestions and help
 * Mr Shun - Introducing advance mapping and regex for data processing
-* Mr Ace Liang - For sharing how I should tackle data processing between different pages
-* Mr Benjamin Png - For your continuous assitance and brainstorming of ideas  
+* Mr Ace Liang - For providing clues for me to solve various technical problems
+* My Son - For keep disturbing me during my lesson and project but I still love him
 * Mr Alexander Yan - For giving me the confidence that this project will bring value
 © 2021 GitHub, Inc.
 Terms
