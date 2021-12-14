@@ -16,8 +16,7 @@ Wiki
 Security
 Insights
 livefitt/readme.md
-@yongsannnn
-yongsannnn Updated style.css; nav bar to top when desktop view. readme v1.10
+
 Latest commit 687f09a on Feb 22
  History
  1 contributor
@@ -25,7 +24,6 @@ Latest commit 687f09a on Feb 22
    
 # Interactive Web Application Project
 
-# **LiveFITT.beta**
 ## Context
 This project includes writing custom HTML5, CSS3, Vanila JavaScript code to create a webpage that serve the following purpose: 
 * Help the Crypto investors to decide which platform to trade crypto & relevant derivatives. 
@@ -67,12 +65,11 @@ EUG05. To decided which gym to visit at specific timing.
 ```
 
 ## Identifying Users Pain Point
-With the pax restrictions imposed to businesses due to health and safety protocol. Users find themselves with the following pain points. 
-
+Crypto investment 
 ``` 
-UPP01. Do not want to visit a gym that is fully occupied. 
-UPP02. Wants to visit the gym but don't know where is the nearest outlet. 
-UPP03. Wants to plan for future trip but do not know how occupied it is during various time and day. 
+UPP01. Want to minimize the counterparty/platform risk 
+UPP02. Not sure how much to put in Crypto 
+UPP03. Seek good trading opportunity in terms of right crypto and right timing
 ``` 
 
 ## Identifying Site Owner's Goals
@@ -160,34 +157,36 @@ SCI11. Description.
 SCI12. Past weekly data.
 ```
 
-### Image required
-```
-SCI13. Custom pins to denote occupancy rate.
-SCI14. Custom pin to denote current location when enabled.
-SCI15. Buttons to represent and navigate to relevant content. 
-```
+
 
 
 ## Content Structure
 The content structure of this page will follow a **LINEAR STRUCTURE**.
 
-Home Page > Gym Tracker Page
+Home Page > CryptoChartPage
 
-![Content Structure Image](images/content-structure.png)
+
 1. Home Page:
-    * The page will only have one section that contains the map and an overlay of nav bar. 
-    * Map will show the overview of the entire singapore with location of all outlets being pinned.
+    * The page will only have one section that contains the exchange selection session, currency conversion session, contact me session ,nav bar and footer. 
+    *  Exchange/platform selection session contains 
+        1）featured platform (automatically by iterating over the API)
+        2) platform info, which the user can have the option in a drop down menu to select the platform they want to view
+
+    *  Currency conversion Session
+        1）users can select the currency pair to convert currency into each other 
+        2) users can enter either fiat currency or other crypto and key in the amount to convert into BTC equivalent
+     
+            
     * Nav bar will contain the following. 
-        1) Dropdown menu that has all the available outlets. 
-        2) A button to link to Gym Tracker Page.
-        3) A button to get the location of the user and show the nearest outlet. 
-        4) An information button that explains the site objective, usage and legend. 
-    * The page should allow the users to interpret the occupancy without amy actions. 
+        1) A button link to CryptoChart page
+        2) A button link to Exchange session
+        3) A button link to Forex conversion session
+        4) A button link to contact me and live crypto price part  
 
 2. Crypto Chart Page: 
     * The page will present data through Line Chart, Pie Chart and a data table.
     * Using dropdown menu to include options for users to interact with. 
-    * Display Live day high, low, spot price data of the selected Crypto Coin.
+    * Display Live day high, low, spot price data of the selected Crypto Coin in a table
 
 
 # Skeleton
@@ -210,23 +209,13 @@ Nav bar is presented at the top to navigate between pages.
 
 ![Skeleton Design for Gym Tracker Page](images/skeleton-tracker.png)
 
-## Site Map
-
-![Site Map](images/site-map-alt.png)
 
 ## Home Page
 
-### Map
-* SCI03. Name of the location
-* SCI04. Live Occupancy Rate
-* SCI05. Postal Code
-* SCI06. Telephone Number
-* SCI07. Address
-* SCI08. Opening Hours
-* SCI09. Location of the user
+
 
 ### Nav bar
-* SCI01. Objective of the project
+* Objective of the project
 * SCI02. How to use
 * SCI10. Legend
 * CRM02. Location finder 
@@ -262,25 +251,16 @@ Nav bar is presented at the top to navigate between pages.
 
 
 ## Navigation
-Navigation between sites can be done by using the nav bar provided. 
+Navigation between and within sites can be done by using the nav bar provided. 
 
 In Home Page, the nav bar will be at the top for laptop and desktop view. For mobile and tablet view, the nav bar will be at the bottom. 
 
-To navigate to Gym Tracker Page you have to press on the button represented by the graph image. 
-
-On the Gym Tracker Page, you can navigate back to the Home Page using the top nav bar.
+On the Gym Tracker Page, you can navigate back to the Home Page using the button at the top of page
 
 # Surface
 ## Color
 White and Yellow are the main colours applied. I intend to apply softer colour to calm down the users who is likely to be exciting and nervous in preparing the volatile crypto trading.
-## Fonts
-[Nunito](https://fonts.google.com/specimen/Nunito?query=nun&preview.text_type=custom) font are used for title as it is a well balanced sans serif typeface superfamily. Lightly bolded highlights the title and paragraphs. 
 
-[Roboto](https://fonts.google.com/specimen/Roboto?query=roboto&preview.text_type=custom#glyphs) font are used to inherit all of the body text in the webpage. 
-
-The font features friendly and open curves. It allow letters to be settled into their natural width. 
-
-This makes for a more natural reading rhythm which are commonly found in humanist and serif font types.
 
 ## Features
 
