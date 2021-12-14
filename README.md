@@ -187,7 +187,6 @@ Home Page > Gym Tracker Page
 2. Crypto Chart Page: 
     * The page will present data through Line Chart, Pie Chart and a data table.
     * Using dropdown menu to include options for users to interact with. 
-    * Display Live occupany data of the selected gym.
     * Display Live day high, low, spot price data of the selected Crypto Coin.
 
 
