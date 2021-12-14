@@ -1,26 +1,10 @@
 <<<<<<< HEAD
 =======
 
- 
-@yeyehandsome1984 
 
-/
-livefitt
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-livefitt/readme.md
 
-Latest commit 687f09a on Feb 22
- History
- 1 contributor
-383 lines (280 sloc)  14.7 KB
+
+
    
 # Interactive Web Application Project
 
@@ -32,12 +16,12 @@ This project includes writing custom HTML5, CSS3, Vanila JavaScript code to crea
 
 User's goal: To see the location and current occupancy rate of the nearest gym based on their current position.
 
-Site owner's goal: To showcase proficiency in the mentioned programming language.
+Site owner's goal: To showcase proficiency and practice the web development knowledge 
 
 ## Access
 Url to live site: https://yeyehandsome1984.github.io/Cryptosite/
 
-![Display sample on different devices upon loading](images/display-sample.PNG)
+
 
 
 # Defining the Project
@@ -45,7 +29,7 @@ The purpose of this website is to aid the investors in the process of deciding w
 
 with the scam, hacking cases plaguing the cryptco trading platform, it is important for investors to choose the right platform. By providing with the key info for the major platforms, it will help users decide when and which platform to trade to visit. The site has also featured recommended site based on key parameters.
 
-Cryptcos are very volatile, the timing to invest is very crucial to investors. 
+Crypcos are very volatile, the timing to invest is very crucial to investors. 
 
 # Strategy
 ## Identifying External Users
@@ -57,11 +41,9 @@ The users' goal here is to get the necessary information they want to make a dec
 Therefore, the interface should be simple to understand and easy to interact with.  
 
 ```
-EUG01. See all location of the gyms.
-EUG02. Find out which gym is closest from their current location.
-EUG03. See key information of the selected outlet. Such as, opening hours, address and occupancy rate
-EUG04. Interact with the chart to filter/compare outlet past weekly data and live occupancy rate. 
-EUG05. To decided which gym to visit at specific timing.
+EUG01. See the detail of mainstream platform and crypto
+EUG02. Find out which Platform and Crypto to trade with
+
 ```
 
 ## Identifying Users Pain Point
@@ -76,35 +58,16 @@ UPP03. Seek good trading opportunity in terms of right crypto and right timing
 As a start of my journey to become a software developer. My goal as the site owner is to showcase my proficiency in HTML5/CSS3/Vanila JavaScript.
 
 ```
-SOG1. Showcase my proficiency in HTML5/CSS3/Vanila JavaScript.
-SOG2. Provide a platform to solve users pain point 
+Showcase my proficiency in HTML5/CSS3/Vanila JavaScript.
+Provide a platform to solve users pain point 
 ```
 
-## User stories
-```
-US01. As a user, I want to look at all the outlets, so that I know where are they located.
-US02. As a user, I want to know which outlet is closest to me, so that I avoid travelling too far. 
-US03. As a user, I want to see the details of the outlet chosen, so that I contact/travel to the gym.
-US04. As a user, I want to know how filled the gym is now, so that I know if I should visit it now.
-US05. As a user, I want to know the past occupancy data, so that I can plan my future trip. 
-```
+
 
 # Scope
-## Functional Requirement
-```
-FR01. Intreactive map to satisfy user need.
-FR02. User can enable his location and use it and find the nearest outlet. 
-FR03. User should be able to interact with the chart to filter/compare different outlet's past & live occupancy.
-FR05. Live data of the occupancy rate should be updating without the need of the user to trigger a refresh. 
-FR06. Use advance CSS/JavaScript to showcase proficiency.
-FR07. Mobile responsive to decides such as Phone, Tablet and Laptop.
-FR08. Navigational bar to toggle between pages. 
-``` 
 
-## Non-Functional Requirement
-```
-NFR01. Ensure readability.
-NFR02. For security purpose, location of users should not be stored.
+
+
 ```
 
 ## Content Requirement
@@ -112,49 +75,40 @@ NFR02. For security purpose, location of users should not be stored.
 The list below contains the mandatory requirement for the site to meet all of the users goals (EUG01-05).
 
 ```
-CRM01. Interactive Map. (EUG01)
-CRM02. Location finder. (EUG02)
-CRM03. Distance calculator. (To calculate nearest points) (EUG02)
-CRM04. Information Table. (Static Dataset such as Address, Postal Code, Tel Number) (EUG03)
-CRM05. Occupancy Rate Table. (Dynamic Dataset that updates with time) (EUG03) (EUG04)
+CRM01. Interactive form 
+CRM02. Currency converter  (EUG02)
+CRM03. Platform info (To auto provide recommendation) (EUG02)
+CRM04. Information Table. (day high, day low, volume, spot price etc) (EUG03)
+CRM05. Price, market cap, trading volume movement (Dynamic Dataset that updates with time) (EUG03) (EUG04)
 CRM06. Interactive Chart. (EUG04)
 ```
 
 ### Optional Requirement
 The list below are optional requirements that can be implemented to enhance the site's feature. 
 
-They may not be implemented due to various reasons. (Eg, authorisation, access to system/domains)
+They may not be implemented due to various reasons. (Eg, Time, access to system/domains)
 
 ```
-CRO01. Book/Reserve slots with the gym.
-CRO02. View the avaiability of various classes in each gym.
-CRO03. Make payment using CC/ActiveSG Credits. 
+CRO01. Apply a combination of parameters to make recommendation of platforms
+CRO02. Apply technical indicator to the chart to help more seasoned investors
+CRO03. Add real trading capacity 
 ``` 
 
 # Structure
 ## Content Information
 Information that are required to fulfil the mandatory content requirement.
 
-Some information will be shared across different pages.
 
-### Information required on the interactive map
-```
-SCI01. Objective of the project.
-SCI02. How to use.
-SCI03. Name of the location.
-SCI04. Live Occupancy Rate.
-SCI05. Postal Code.
-SCI06. Telephone Number.
-SCI07. Address.
-SCI08. Opening Hours.
-SCI09. Location of the user.
-SCI10. Legend.
-```
+
 
 ### Information required on the chart
 ```
-SCI11. Description.
-SCI12. Past weekly data.
+1） Market Cap
+2） Day high/ Day low
+3） Trading volume 
+4)  Historical Price
+ 
+
 ```
 
 
@@ -207,7 +161,7 @@ This page will focus on the heatmap and filtering function. Upon interaction it 
 
 Nav bar is presented at the top to navigate between pages.
 
-![Skeleton Design for Gym Tracker Page](images/skeleton-tracker.png)
+
 
 
 ## Home Page
@@ -225,8 +179,6 @@ Nav bar is presented at the top to navigate between pages.
 ### Nav bar
 * Logo
 * Navigation to Home Page
-
-
 
 
 ### Dropdown menu
@@ -265,7 +217,7 @@ White and Yellow are the main colours applied. I intend to apply softer colour t
 ## Features
 
 ## Content
-The webpage contains the neccessary information the user needs. Compiled and tabulated in a simple and easy to read manner.
+The webpage contains the necessary information the user needs. Compiled and tabulated in a simple and easy to read manner.
 
 The navbar is available for user to go to different part of the project
 
@@ -333,12 +285,11 @@ In this application HTML5 is used to structure the content, CSS3 for styling and
 
 By using Bootstrap 4, mobile responsive design is made easier with the row-col system, bootstrap has also been applied for table, forms, navbar, footer and button. 
 
-To demostrate proficiency, I have used CSS to create simple transform, mobile responsive codes with media query and flexbox.
+To demonstrate proficiency, I have used CSS to create simple transform, mobile responsive codes with media query and flexbox.
 
 Several other tools that played a role in this application:
 
-For API,
-* [Axios](https://github.com/axios/axios)
+
 
 
 For styling,
@@ -371,21 +322,8 @@ For API References,
 *
 
 # Acknowledgments
-* Mr Paul Chor - For all the countless suggestions and help
-* Mr Shun - Introducing advance mapping and regex for data processing
-* Mr Ace Liang - For providing clues for me to solve various technical problems
+* Mr Paul Chor - For the great lessons conducted
+* Mr Ace Liang - For providing precious clues for me to solve various technical problems
 * My Son - For keep disturbing me during my lesson and project but I still love him
-* Mr Alexander Yan - For giving me the confidence that this project will bring value
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
->>>>>>> f404801cbdf3ff3d70c15dd7971cd6434ae6b346
+
+
