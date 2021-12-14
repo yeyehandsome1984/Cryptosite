@@ -233,14 +233,12 @@ Nav bar is presented at the top to navigate between pages.
 * Navigation to Gym Tracker Page
 
 
-## Gym Tracker Page
 ### Nav bar
 * Logo
 * Navigation to Home Page
 
 
-### Description
-* SCI11. Description
+
 
 ### Dropdown menu
 * Select Crypto
@@ -256,7 +254,11 @@ Nav bar is presented at the top to navigate between pages.
 ### LineChart
 * cryptco Price, market trading volume, market cap history
 
-### PieChart 
+### PieChart  
+* Market Cap 
+
+### Table 
+* Price, volume, supply, cap, %24h movement, price etc
 
 
 ## Navigation
@@ -292,15 +294,8 @@ The webpage is responsive across various devices from desktop and laptop to phon
 
 
 
-## Map overview
-With the aid of map information can be seen at a glance without the need of inputs from the user. 
 
-Only when specific information is needed the user will require to carry out input. Eg, nearest outlet from current location.
 
-## Heatmap
-As the data set is heavy with numbers. Heatmap makes showing this chunky dataset into simple and readable chart. 
-
-With the compliment of color selection, at a glance the user is able to infer the dataset. 
 
 
 # Testing
@@ -369,7 +364,8 @@ For API,
 For styling,
 * [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
-for font, 
+for Icon
+* [AwesomeFont](https://getbootstrap.com/docs/4.0/getting-started/introduction/)) 
 
 For deployment,
 * [Github](https://github.com/)
@@ -384,7 +380,9 @@ For removing photo background,
 
 # References
 For API References,
-* [Crypto live price](wss://stream.binance.com:9443/ws)
+
+
+* [Crypto live price](wss://stream.binance.com:9443/ws/etheur@trade)
 * [Forex conversion among Fiat currencies](https://api.frankfurter.app/currencies)
 * [Crypto market cap data ](https://api.coingecko.com/api/v3/global)
 * [Other Crypto into bitcoin](https://api.coingecko.com/api/v3/exchange_rates)

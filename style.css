@@ -173,27 +173,6 @@ img {
     height: 100%;
     content: ""; }
 
-.mfp-image-holder .mfp-close,
-.mfp-iframe-holder .mfp-close {
-  color: #ffffff;
-  right: 0;
-  padding-right: 0;
-  width: 30px;
-  height: 30px;
-  background-color: #ffaf02;
-  line-height: 30px;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  right: -30px; }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .mfp-image-holder .mfp-close,
-    .mfp-iframe-holder .mfp-close {
-      right: 0; } }
-  @media only screen and (max-width: 767px) {
-    .mfp-image-holder .mfp-close,
-    .mfp-iframe-holder .mfp-close {
-      right: 0; } }
 
 input:focus,
 textarea:focus {
@@ -243,41 +222,7 @@ textarea:focus {
       border-bottom: 3px solid #ffaf02; }
 
 /* :: 5.0 Header Area CSS */
-.header-area {
-  position: relative;
-  z-index: 100;
-  width: 100%; }
-  .header-area .top-header {
-    width: 100%;
-    height: 60px;
-    background-color: #292929; }
-    @media only screen and (max-width: 767px) {
-      .header-area .top-header {
-        height: 80px;
-        padding: 15px 0; } }
-    @media only screen and (max-width: 767px) {
-      .header-area .top-header .top-header-content {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap; } }
-    .header-area .top-header .top-headline p {
-      margin-bottom: 0;
-      font-family: "Montserrat", sans-serif;
-      color: #ffffff;
-      font-size: 12px;
-      font-weight: 400; }
-      .header-area .top-header .top-headline p span {
-        color: #ffaf02; }
-    .header-area .top-header .login-faq-earn-money a {
-      display: inline-block;
-      font-family: "Montserrat", sans-serif;
-      color: #ffffff;
-      font-size: 12px;
-      font-weight: 400;
-      margin-right: 30px; }
-      .header-area .top-header .login-faq-earn-money a:last-child {
-        margin-right: 0; }
-      .header-area .top-header .login-faq-earn-money a:hover, .header-area .top-header .login-faq-earn-money a:focus, .header-area .top-header .login-faq-earn-money a.active {
-        color: #ffaf02; }
+
   .header-area .cryptos-main-menu {
     position: relative;
     width: 100%;
@@ -444,7 +389,7 @@ textarea:focus {
     opacity: 1;
     visibility: visible; }
 
-/* :: 7.0 Feature Area CSS */
+/* :: Platform Feature Area CSS */
 .platform-feature-area {
   position: relative;
   z-index: 1;
