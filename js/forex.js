@@ -90,7 +90,7 @@ const currencySelect2 = document.getElementById("currency2");
           }
         }
 
-        //let currencySelected = entryBtc.filter(coin=>coin.name===btcSelected);
+     
  
 
         if (btcSelected != "Bitcoin") {

@@ -28,33 +28,33 @@ Latest commit 687f09a on Feb 22
 # **LiveFITT.beta**
 ## Context
 This project includes writing custom HTML5, CSS3, Vanila JavaScript code to create a webpage that serve the following purpose: 
-* Show the user where are the location of the ActiveSG Gyms(hereinafter, known as "gym") in Singapore.
-* Display the live occupancy rate and the average occupancy of each gym over one-hour periods in the past week.
-* Allow users to read and interact with the data chart to plan out future visits.
+* Help the Crypto investors to decide which platform to trade crypto & relevant derivatives. 
+* Display the purchasing power 
+* Allow users to read and interact with the data chart/table to choose which crypto, which currency they want to pull out the information
 
 User's goal: To see the location and current occupancy rate of the nearest gym based on their current position.
 
 Site owner's goal: To showcase proficiency in the mentioned programming language.
 
 ## Access
-Url to live site: https://yongsannnn.github.io/livefitt/
+Url to live site: https://yeyehandsome1984.github.io/Cryptosite/
 
 ![Display sample on different devices upon loading](images/display-sample.PNG)
 
 
 # Defining the Project
-The purpose of this website is to aid users in the process of deciding when to head down to the gym. 
+The purpose of this website is to aid the investors in the process of deciding when where and how to trade the Cryptos. 
 
-With the current pax limit imposed to businesses, information such as occupancy rate becomes crucial. 
+with the scam, hacking cases plaguing the cryptco trading platform, it is important for investors to choose the right platform. By providing with the key info for the major platforms, it will help users decide when and which platform to trade to visit. The site has also featured recommended site based on key parameters.
 
-By providing with the said info, it will help users decide when and which outlet to visit. 
+Cryptcos are very volatile, the timing to invest is very crucial to investors. 
 
 # Strategy
 ## Identifying External Users
 With the primary purpose mentioned above, the website's primary users should be Crypto investors/traders enthusiast. 
 
 ## Identifying External Users' Goals
-The users' goal here is to get the neccessary information they want to make a decision. 
+The users' goal here is to get the necessary information they want to make a decision. 
 
 Therefore, the interface should be simple to understand and easy to interact with.  
 
@@ -243,15 +243,21 @@ Nav bar is presented at the top to navigate between pages.
 * SCI11. Description
 
 ### Dropdown menu
-* Select Gym
-* Select Time
+* Select Crypto
+* Select Currency
 
 ### Live Occupancy Data
-* SCI03. Name of the location
-* SCI04. Live Occupancy Rate
+* Market cap 
+* spot, high, low
+* trading volume 
+* Exchange rate
 
-### Heatmap
-* SCI12. Past weekly data
+
+### LineChart
+* cryptco Price, market trading volume, market cap history
+
+### PieChart 
+
 
 ## Navigation
 Navigation between sites can be done by using the nav bar provided. 
@@ -264,22 +270,7 @@ On the Gym Tracker Page, you can navigate back to the Home Page using the top na
 
 # Surface
 ## Color
-On the Home Page, as most of the space is covered by the map. I have decided to make the nav bar transparent. 
-
-Reason for this is that *if* any content were to be displayed upon zoom. The transparent nav bar will not block of any information.
-
-Pins selected are intentionally made with three differentiating colors to denote it's occupancy rate through visual means.
-
-On the Gym Tracker Page, I decided to use dark blue and red as the main color. 
-
-Blue often denotes as depth, trust, wisdom and intelligence. Which suits the data-centric nature of the webpage.
-
-Red are used on the heatmap, from lightly shaded (yellow) to dark red (maroon). 
-
-Red has one of the highest contrast value when seen on a palette *(Another color is green)*.
-
-We can instantly denote the key information based on how intense the red is shown, making it easy for users to understand the meaning of the data. 
-
+White and Yellow are the main colours applied. I intend to apply softer colour to calm down the users who is likely to be exciting and nervous in preparing the volatile crypto trading.
 ## Fonts
 [Nunito](https://fonts.google.com/specimen/Nunito?query=nun&preview.text_type=custom) font are used for title as it is a well balanced sans serif typeface superfamily. Lightly bolded highlights the title and paragraphs. 
 
@@ -292,14 +283,14 @@ This makes for a more natural reading rhythm which are commonly found in humanis
 ## Features
 
 ## Content
-The webpage contains all the neccessary information the user needs. Compiled and tabulated in a simple and easy to read manner.
+The webpage contains the neccessary information the user needs. Compiled and tabulated in a simple and easy to read manner.
 
-The homepage also contains an information button that will display a quick guide and summary of the project.
+The navbar is available for user to go to different part of the project
 
 ## Responsiveness
 The webpage is responsive across various devices from desktop and laptop to phones and tablets. The component will automatically re-arrange itself based on the screen size.
 
-Reccommended view for phone and tablets is in portrait mode. 
+
 
 ## Map overview
 With the aid of map information can be seen at a glance without the need of inputs from the user. 
@@ -350,24 +341,22 @@ With the compliment of color selection, at a glance the user is able to infer th
 Two pages validated by validating service  [W3C Markup Validator](https://validator.w3.org/).
 ```
 index.html - Document checking completed. No errors or warnings to show.
-tracker-html - Document checking completed. No errors or warnings to show.
+crytcojschart-html - Document checking completed. Option for frequency and currency not working yet in JSchart.
 ```
 
 # Deployment
 Ensured all changes has been save and pushed to GitHub.
 
-LiveFITT is deployed to Github. All icons and images used in the project are stored together.
+CryptoYY is deployed to Github. All icons and images used in the project are stored together.
 
 Data sets are live and are called automatically. 
 
-If you would like to deploy or fork this application you can visit https://github.com/yongsannnn/livefitt. There is only one branch to this application. 
+If you would like to deploy or fork this application you can visit https://yeyehandsome1984.github.io/Cryptosite/. 
 
 # Technologies
-In this application HTML5 is used to structure the content, CSS3 for styling and Vanila JavaScript to process data.
+In this application HTML5 is used to structure the content, CSS3 for styling and Vanila JavaScript to process data. VS code is used as coding platform. 
 
-Gitpod is used as the main coding platform. 
-
-By using Bootstrap 4, mobile responsive design is made easier with the row-col system. 
+By using Bootstrap 4, mobile responsive design is made easier with the row-col system, bootstrap has also been applied for table, forms, navbar, footer and button. 
 
 To demostrate proficiency, I have used CSS to create simple transform, mobile responsive codes with media query and flexbox.
 
@@ -388,16 +377,20 @@ For deployment,
 For graph,
 * [JSChart](https://www.chartjs.org/)
 
-For icons,
-* [Flaticon](https://www.flaticon.com/)
+For removing photo background,
+* [Remove](https://www.remove.bg//)
 
 
 
 # References
 For API References,
-* [Cryptco live price](https://data.gov.sg/)
+* [Crypto live price](wss://stream.binance.com:9443/ws)
 * [Forex conversion among Fiat currencies](https://api.frankfurter.app/currencies)
-* []
+* [Crypto market cap data ](https://api.coingecko.com/api/v3/global)
+* [Other Crypto into bitcoin](https://api.coingecko.com/api/v3/exchange_rates)
+* [Crypto Exchange/Platform data](https://api.coingecko.com/api/v3/exchanges)
+* [individual Crypto data](https://api.coingecko.com/api/v3/coins/${coin}/market_chart?vs_currency=jpy&days=1800&interval=weekly)
+*
 
 # Acknowledgments
 * Mr Paul Chor - For all the countless suggestions and help
