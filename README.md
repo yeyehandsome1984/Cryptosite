@@ -164,7 +164,7 @@ SCI12. Past weekly data.
 ```
 SCI13. Custom pins to denote occupancy rate.
 SCI14. Custom pin to denote current location when enabled.
-SCI15. Buttons to represent and navigate to relavent content. 
+SCI15. Buttons to represent and navigate to relevant content. 
 ```
 
 
@@ -184,10 +184,11 @@ Home Page > Gym Tracker Page
         4) An information button that explains the site objective, usage and legend. 
     * The page should allow the users to interpret the occupancy without amy actions. 
 
-2. Gym Tracker Page: 
-    * The page will present data via a heatmap.
+2. Crypto Chart Page: 
+    * The page will present data through Line Chart, Pie Chart and a data table.
     * Using dropdown menu to include options for users to interact with. 
     * Display Live occupany data of the selected gym.
+    * Display Live day high, low, spot price data of the selected Crypto Coin.
 
 
 # Skeleton
