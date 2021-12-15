@@ -55,7 +55,7 @@
     box-shadow:none;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 768px) {
     #contactUS { font-size: 1rem; margin-bottom: 3px;}
     #contactColume {max-height: 100px;}
     #weLikeHear{visibility: hidden;}

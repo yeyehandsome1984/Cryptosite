@@ -9,7 +9,7 @@
 # Interactive Web Application Project
 
 ## Context
-This project includes writing custom HTML5, CSS3, Vanila JavaScript code to create a webpage that serve the following purpose: 
+This project includes writing custom HTML5, CSS3, Vanilla JavaScript code to create a webpage that serve the following purpose: 
 * Help the Crypto investors to decide which platform to trade crypto & relevant derivatives. 
 * Display the purchasing power 
 * Allow users to read and interact with the data chart/table to choose which crypto, which currency they want to pull out the information
@@ -27,9 +27,9 @@ Url to live site: https://yeyehandsome1984.github.io/Cryptosite/
 # Defining the Project
 The purpose of this website is to aid the investors in the process of deciding when where and how to trade the Cryptos. 
 
-with the scam, hacking cases plaguing the cryptco trading platform, it is important for investors to choose the right platform. By providing with the key info for the major platforms, it will help users decide when and which platform to trade to visit. The site has also featured recommended site based on key parameters.
+with the scam, hacking cases plaguing the crypto trading platform, it is important for investors to choose the right platform. By providing with the key info for the major platforms, it will help users decide when and which platform to trade to visit. The site has also featured recommended site based on key parameters.
 
-Crypcos are very volatile, the timing to invest is very crucial to investors. 
+Cryptos are very volatile, the timing to invest is very crucial to investors. 
 
 # Strategy
 ## Identifying External Users
@@ -140,17 +140,9 @@ Nav bar is intentionally placed at the bottom of the page so that mobile users c
 
 The nav bar will move to the top when it is on desktop/laptop view. 
 
-
-
 ## Crypto Chart page
 This page will focus on providing chart and table 
 There is a button at the top to navigate back to home page.
-
-
-
-
-## Home Page
-
 
 ### Nav bar
 * Logo
@@ -181,7 +173,7 @@ There is a button at the top to navigate back to home page.
 ## Navigation
 Navigation between and within sites can be done by using the nav bar provided. 
 
-In Home Page, the nav bar will be at the top for laptop and desktop view. For mobile and tablet view, the nav bar will be 愛at the left side. 
+In Home Page, the nav bar will be at the top for laptop and desktop view. For mobile and tablet view, the nav bar will appear at the left side. 
 
 On the CryptoChart Page, you can navigate back to the Home Page using the button at the top of page
 
@@ -209,15 +201,10 @@ The webpage is responsive across various devices from desktop and laptop to phon
 |Overall | Mobile Responsive Check| No display error|
 |Platform recommendation| On load | Display name, website link, logo of recommended platform. |
 |Platform selection | Choose the platform by using the option| Display information in the table. Dropdown menu value will update|
-| | 
 |Nav Bar|move between pages and within the page| 
-| | Selecting "Show All" from dropdown | Map will zoom back to default viewset
-| | Select currency | input the amount to convert into equivalent Bitcoin amount|
-| | Clicking on location button| Prompt user to allow access of location|
-Crypto price table| On load | Display logo, name and price, price movement shows color based on up (green) and down )(red). |
-| | Currency conversion| the correct converted amount can appear based on the currency/crypto selected and the amount to be converted.
+Crypto price table| On load | Display logo, name and price, price movement shows color based on up (green) and down )(red). 
+| Currency conversion| the correct converted amount can appear based on the currency/crypto selected and the amount to be converted.
 | | THe navbar and "readmore" session in sliding bar is able to link to crypto Chart page
-
 
 
 ## Crypto Chart Page
@@ -227,7 +214,6 @@ Crypto price table| On load | Display logo, name and price, price movement shows
 |Page Function| On load | Live occupancy and Heatmap rendered based on default location in dropdown menu |
 |Dropdown Menu | Selecting different Crypto| Three line chart will appear each represent price, volume and market cap|
 | |Select different Crypto| Day high, day low, spot and logo will appear in the table|
-
 |Nav Bar| Click on the top button| Brings user back to Home Page|
 
 
