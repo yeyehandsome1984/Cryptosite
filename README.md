@@ -193,9 +193,9 @@ There is a button at the top to navigate back to home page.
 ## Navigation
 Navigation between and within sites can be done by using the nav bar provided. 
 
-In Home Page, the nav bar will be at the top for laptop and desktop view. For mobile and tablet view, the nav bar will be at the bottom. 
+In Home Page, the nav bar will be at the top for laptop and desktop view. For mobile and tablet view, the nav bar will be 愛at the left side. 
 
-On the Gym Tracker Page, you can navigate back to the Home Page using the button at the top of page
+On the CryptoChart Page, you can navigate back to the Home Page using the button at the top of page
 
 # Surface
 ## Color
