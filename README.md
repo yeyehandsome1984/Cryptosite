@@ -55,18 +55,9 @@ UPP03. Seek good trading opportunity in terms of right crypto and right timing
 ``` 
 
 ## Identifying Site Owner's Goals
-As a start of my journey to become a software developer. My goal as the site owner is to showcase my proficiency in HTML5/CSS3/Vanila JavaScript.
-
-```
+As a start of my journey to become a software developer. My goal as the site owner is to showcase my proficiency in HTML5/CSS3/Vanila JavaScript. And potentially build up a site could help the investors, including myself. 
 
 
-
-
-# Scope
-
-
-
-```
 
 ## Content Requirement
 ### Mandatory Requirement
@@ -109,9 +100,6 @@ Information that are required to fulfil the mandatory content requirement.
 
 ```
 
-
-
-
 ## Content Structure
 The content structure of this page will follow a **LINEAR STRUCTURE**.
 
@@ -152,7 +140,7 @@ Nav bar is intentionally placed at the bottom of the page so that mobile users c
 
 The nav bar will move to the top when it is on desktop/laptop view. 
 
-![Skeleton Design for Home Page](images/skeleton-home.png)
+
 
 ## Crypto Chart page
 This page will focus on providing chart and table 
@@ -213,11 +201,6 @@ The navbar is available for user to go to different part of the project
 The webpage is responsive across various devices from desktop and laptop to phones and tablets. The component will automatically re-arrange itself based on the screen size.
 
 
-
-
-
-
-
 # Testing
 ## Functionality Test
 ## Home Page
@@ -225,14 +208,16 @@ The webpage is responsive across various devices from desktop and laptop to phon
 |---------|-----------------------------|---------------------|
 |Overall | Mobile Responsive Check| No display error|
 |Platform recommendation| On load | Display name, website link, logo of recommended platform. |
-| | Choose the platform by using the option| Display information in the table. Dropdown menu value will update|
+|Platform selection | Choose the platform by using the option| Display information in the table. Dropdown menu value will update|
 | | 
 |Nav Bar|move between pages and within the page| 
 | | Selecting "Show All" from dropdown | Map will zoom back to default viewset
 | | Select currency | input the amount to convert into equivalent Bitcoin amount|
 | | Clicking on location button| Prompt user to allow access of location|
 Crypto price table| On load | Display logo, name and price, price movement shows color based on up (green) and down )(red). |
-| | Allow access of location| Map plots a new marker with the current location of user and zoom to nearest gym location|
+| | Currency conversion| the correct converted amount can appear based on the currency/crypto selected and the amount to be converted.
+| | THe navbar and "readmore" session in sliding bar is able to link to crypto Chart page
+
 
 
 ## Crypto Chart Page
@@ -247,7 +232,7 @@ Crypto price table| On load | Display logo, name and price, price movement shows
 
 
 ## Validating Markup
-Two pages validated by validating service  [W3C Markup Validator](https://validator.w3.org/).
+Two pages validated by validating service  
 ```
 index.html - Document checking completed. No errors or warnings to show.
 crytcojschart-html - Document checking completed. Option for frequency and currency not working yet in JSchart.
