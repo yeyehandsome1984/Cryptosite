@@ -49,8 +49,9 @@ const currencySelect2 = document.getElementById("currency2");
             ans.value = Object.values(val.rates)[0];
           });
       }
+
+      
       // Bitcoin Converter Session
-      // Fetch data for Bitcoin exchange rate
 
 
       async function getCoinRate() {

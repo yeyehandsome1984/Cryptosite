@@ -156,24 +156,14 @@ The nav bar will move to the top when it is on desktop/laptop view.
 
 ![Skeleton Design for Home Page](images/skeleton-home.png)
 
-## Gym Tracker Page
-This page will focus on the heatmap and filtering function. Upon interaction it will display the data in an neat and orderly manner.
-
-Nav bar is presented at the top to navigate between pages.
+## Crypto Chart page
+This page will focus on providing chart and table 
+There is a button at the top to navigate back to home page.
 
 
 
 
 ## Home Page
-
-
-
-### Nav bar
-* Objective of the project
-* SCI02. How to use
-* SCI10. Legend
-* CRM02. Location finder 
-* Navigation to Gym Tracker Page
 
 
 ### Nav bar
@@ -185,7 +175,7 @@ Nav bar is presented at the top to navigate between pages.
 * Select Crypto
 * Select Currency
 
-### Live Occupancy Data
+### Live Crypto
 * Market cap 
 * spot, high, low
 * trading volume 
@@ -236,7 +226,7 @@ The webpage is responsive across various devices from desktop and laptop to phon
 |Category |Input/Actions | Output/Errors |
 |---------|-----------------------------|---------------------|
 |Overall | Mobile Responsive Check| No display error|
-|Map Function| On load | Display all location with pins. Color is based on occupancy.(Red,Yellow,Green)|
+|Platform recommendation| On load | Display name, website link, logo of recommended platform. |
 | | Clicking on location pin| Display key information SCI03 to SCI08. Dropdown menu value will update|
 | | Zooming in and out on various device| No display error|
 |Nav Bar| Selecting gym from dropdown menu| Zoom to specific gym|
@@ -248,21 +238,16 @@ The webpage is responsive across various devices from desktop and laptop to phon
 | | Deny access of location | No output expected when user deny access|
 | | Clicking on information button| Popup box containing SCI01/SCI02/SCI10 will appear|
 
-## Gym Tracker Page
+## Crypto Chart Page
 |Category |Input/Actions | Output/Errors |
 |---------|-----------------------------|---------------------|
 |Overall | Mobile Responsive Check| No display error|
 |Page Function| On load | Live occupancy and Heatmap rendered based on default location in dropdown menu |
-|Dropdown Menu | Selecting different outlets| Heatmap will render weekly data and current occupancy rate will be shown|
-| | Selecting different time| Heatmap will render selected timing|
-|Heatmap| Hovering/Pressing on individual box| Show a number between 0-100|
-| | Clicking on Collapse button | Download SVG/PNG/CSV will appear|
-| | Selecting Download SVG| SVG file will be saved to local device|
-| | Selecting Download PNG| PNG file will be saved to local device|
-| | Selecting Download CSV| CSV file will be saved to local device|
-|Nav Bar| Clicking on Logo| Brings user back to Home Page|
-| | Clicking on .MAP| Brings user back to Home Page|
-| | Clicking on .TRACKER | Refreshes the Gym Tracker Page|
+|Dropdown Menu | Selecting different Crypto| Three line chart will appear each represent price, volume and market cap|
+| |Select different Crypto| Day high, day low, spot and logo will appear in the table|
+
+|Nav Bar| Click on the top button| Brings user back to Home Page|
+
 
 ## Validating Markup
 Two pages validated by validating service  [W3C Markup Validator](https://validator.w3.org/).
@@ -289,6 +274,7 @@ To demonstrate proficiency, I have used CSS to create simple transform, mobile r
 
 Several other tools that played a role in this application:
 
+for data,
 
 
 
