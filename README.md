@@ -58,9 +58,7 @@ UPP03. Seek good trading opportunity in terms of right crypto and right timing
 As a start of my journey to become a software developer. My goal as the site owner is to showcase my proficiency in HTML5/CSS3/Vanila JavaScript.
 
 ```
-Showcase my proficiency in HTML5/CSS3/Vanila JavaScript.
-Provide a platform to solve users pain point 
-```
+
 
 
 
@@ -227,16 +225,15 @@ The webpage is responsive across various devices from desktop and laptop to phon
 |---------|-----------------------------|---------------------|
 |Overall | Mobile Responsive Check| No display error|
 |Platform recommendation| On load | Display name, website link, logo of recommended platform. |
-| | Clicking on location pin| Display key information SCI03 to SCI08. Dropdown menu value will update|
-| | Zooming in and out on various device| No display error|
-|Nav Bar| Selecting gym from dropdown menu| Zoom to specific gym|
+| | Choose the platform by using the option| Display information in the table. Dropdown menu value will update|
+| | 
+|Nav Bar|move between pages and within the page| 
 | | Selecting "Show All" from dropdown | Map will zoom back to default viewset
-| | Clicking on graph button| Navigate to Gym Tracker Page|
+| | Select currency | input the amount to convert into equivalent Bitcoin amount|
 | | Clicking on location button| Prompt user to allow access of location|
+Crypto price table| On load | Display logo, name and price, price movement shows color based on up (green) and down )(red). |
 | | Allow access of location| Map plots a new marker with the current location of user and zoom to nearest gym location|
-| | Clicking on new marker | Display a popup stating you are here|
-| | Deny access of location | No output expected when user deny access|
-| | Clicking on information button| Popup box containing SCI01/SCI02/SCI10 will appear|
+
 
 ## Crypto Chart Page
 |Category |Input/Actions | Output/Errors |
